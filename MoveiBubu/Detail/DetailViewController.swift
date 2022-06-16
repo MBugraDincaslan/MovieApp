@@ -31,7 +31,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var budgetLabel: UILabel!
     @IBOutlet weak var revenueLabel: UILabel!
-    @IBOutlet weak var genresLabel: UILabel!
     @IBOutlet weak var overViewLabel: UILabel!
     @IBOutlet weak var runTimeLabel: UILabel!
     @IBOutlet weak var productionCompaniesLabel: UILabel!
@@ -108,9 +107,9 @@ class DetailViewController: UIViewController {
             if let revenue = movie.revenue {
                 revenueLabel.text = "REVENUE: \(String(revenue))"
             }
-            if let genres = movie.genres![0].name {
+            /*if let genres = movie.genres![0].name {
                 genresLabel.text = "GENRES: \(String(genres))"
-            }
+            }*/
             if let overview = movie.overview {
                 overViewLabel.text = "OVERVIEW: \(String(overview))"
             }
