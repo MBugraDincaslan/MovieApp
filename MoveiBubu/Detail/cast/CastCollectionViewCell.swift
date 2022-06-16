@@ -16,10 +16,10 @@ class CastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var characterLabel: UILabel!
     
-    func configure (casting: castModel){
+    func configure (casting: creditsModel){
         /*let lastUrl = baseURL + "\(String(describing:movie.id))" + "/" + "\(String(describing: movie.poster_path))"
         let url = URL(string: lastUrl)*/
-        if let posterPath = casting.profile_path {
+        if let posterPath = casting.profile_path{
 
                     if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
 
@@ -38,12 +38,9 @@ class CastCollectionViewCell: UICollectionViewCell {
                 }
        
       
-        movieNameLabel.text = movie.title
-        releaseDateLabel.text = movie.release_date
-        if let rait = movie.vote_average {
-            raitingLabel.text = "IMDB: \(String(rait))"
-            
-        }
+        nameLabel.text = casting.name
+        characterLabel.text = casting.character
+        
         
       
     }

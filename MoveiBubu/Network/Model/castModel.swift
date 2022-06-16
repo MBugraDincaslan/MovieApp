@@ -9,6 +9,7 @@ import Foundation
 
 struct castModel: Codable {
     
+    let id: Int?
     let name: String?
     let biography: String?
     let profile_path: String?

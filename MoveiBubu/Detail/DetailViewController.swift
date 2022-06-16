@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet var firstView: UIView!
     @IBOutlet weak var firstScrollView: UIScrollView!
@@ -37,7 +37,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var castStackView: UIStackView!
     @IBOutlet weak var castLabel: UILabel!
-    @IBOutlet weak var castCollectionView: UICollectionView!
+    @IBOutlet weak var castCollectionView: UICollectionView!{
+    didSet {
+        castCollectionView.dataSource = self
+        castCollectionView.delegate = self
+        castCollectionView.register(UINib(nibName: String(describing: CastCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: CastCollectionViewCell.self))
+        
+        
+        }
+    }
     @IBOutlet weak var castCollectionViewCell: UICollectionViewCell!
     
     @IBOutlet weak var companiesStackLabel: UIStackView!

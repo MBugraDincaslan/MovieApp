@@ -363,7 +363,6 @@
                         <outlet property="releaseDateLabel" destination="IWX-DQ-Zjn" id="a64-j4-8mf"/>
                         <outlet property="revenueLabel" destination="J9i-xc-1YB" id="B37-5E-jsc"/>
                         <outlet property="runTimeLabel" destination="BSV-Vh-dGP" id="XSy-yo-lOP"/>
-                        <outlet property="scrollView" destination="bXh-Q6-h8w" id="cT5-Lh-zF7"/>
                         <outlet property="secondStackView" destination="sEj-Vy-FO8" id="mOR-N2-XxM"/>
                         <outlet property="secondView" destination="8Dq-uq-dCJ" id="q6p-ZC-pgL"/>
                         <outlet property="stackView" destination="Zex-Aw-0OE" id="Evk-uf-vcj"/>
