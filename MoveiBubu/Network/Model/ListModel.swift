@@ -17,4 +17,5 @@ struct ListModel: Codable {
     let release_date: String?
     var vote_average: Double?
     let backdrop_path: String?
+    
 }

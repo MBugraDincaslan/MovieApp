@@ -21,7 +21,7 @@ struct DetailModel: Codable {
     let runtime: Int?
     let production_companies: [Production_Companies]?
     let homepage: String?
-    
+    var vote_average: Double?
     
 }
 

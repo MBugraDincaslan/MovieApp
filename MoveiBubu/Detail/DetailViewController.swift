@@ -64,13 +64,13 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         }
     }
-    @IBOutlet weak var castCollectionViewCell: UICollectionViewCell!
+    
     
     
     @IBOutlet weak var recommStackView: UIStackView!
     @IBOutlet weak var recommLabel: UILabel!
     @IBOutlet weak var recommCollectionView: UICollectionView!
-    @IBOutlet weak var recommCollectionViewCell: UICollectionViewCell!
+
     
     
     
@@ -137,13 +137,16 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 genresLabel.text = "GENRES: \(String(genres))"
             }*/
             if let overview = movie.overview {
-                overViewLabel.text = "OVERVIEW: \(String(overview))"
+                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))"
             }
             if let runtime = movie.runtime {
                 runTimeLabel.text = "RUNTIME: \(String(runtime))"
             }
             if let productioncompany = movie.production_companies![0].name {
                 productionCompaniesLabel.text = "PRODUCTON COMPANIES: \(String(productioncompany))"
+            }
+            if let raiting = movie.vote_average {
+                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))"
             }
         }
     }
