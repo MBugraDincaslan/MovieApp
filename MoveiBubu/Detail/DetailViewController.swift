@@ -8,7 +8,20 @@
 import UIKit
 import Kingfisher
 
+
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cast.count
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = castCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CastCollectionViewCell.self), for: indexPath) as! CastCollectionViewCell
+        cell.configure(casting: cast[indexPath.row])
+        return cell
+    }
+    
+    
     
     @IBOutlet var firstView: UIView!
     @IBOutlet weak var firstScrollView: UIScrollView!
@@ -17,12 +30,13 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var homepageLink: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet weak var secondStackView: UILabel!
+    @IBOutlet weak var secondStackView: UIStackView!
     @IBOutlet weak var thirdView: UIView!
     
-   
+    @IBOutlet weak var genresStackView: UIStackView!
+    @IBOutlet weak var genresCollectionView: UICollectionView!
+    
     
     @IBOutlet weak var raitingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -33,7 +47,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var revenueLabel: UILabel!
     @IBOutlet weak var overViewLabel: UILabel!
     @IBOutlet weak var runTimeLabel: UILabel!
+    
+    @IBOutlet weak var companiesStackView: UIStackView!
     @IBOutlet weak var productionCompaniesLabel: UILabel!
+    
+    @IBOutlet weak var budgetStackView: UIStackView!
     
     @IBOutlet weak var castStackView: UIStackView!
     @IBOutlet weak var castLabel: UILabel!
@@ -48,7 +66,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     @IBOutlet weak var castCollectionViewCell: UICollectionViewCell!
     
-    @IBOutlet weak var companiesStackLabel: UIStackView!
     
     @IBOutlet weak var recommStackView: UIStackView!
     @IBOutlet weak var recommLabel: UILabel!
@@ -58,9 +75,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     
     
-    
+    private let castServices: CastServicesProtocol = CastServices()
     private let detailServices: DetailServicesProtocol = DetailServices()
     private var details: DetailModel?
+    private var cast: [creditsModel] = []
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
     var id : Int?
     
@@ -156,10 +174,37 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 }
         
     }
+ 
+    func getCast () {
+        if let castID = id {
+        castServices.getCast(movieid: castID) { result in
+            switch result {
 
+                    case .success(let response):
+                if let cast = response.cast {
+                    
+                self.cast = cast
+                }
+                        self.configure()
 
+                    case .failure(let error):
+
+                        print(error)
+
+                    }
+
+                }
+
+            }
+            
+        }
+        }
+    
+func configureCell() {
+    
 
 }
+
 
 extension String {
 func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
