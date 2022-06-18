@@ -84,6 +84,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         getDetails()
+        getCast()
         
         
     
@@ -203,10 +204,35 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         }
     
-func configureCell() {
+/*func configureCell() {
+    if let castdetail = cast {
+        if let name = castdetail.name{
+            nameLabel.text = "TITLE: \(String(name))"
+            
+        }
+        if let image = movie.poster_path {
+            if let posterPath = movie.poster_path {
+
+                        if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
+
+                            imageView.kf.setImage(with: imageURL)
+
+                        } else {
+
+                            imageView.image = nil
+
+                        }
+
+                    } else {
+
+                        imageView.image = nil
+
+                    }
+        }
+    }
     
 
-}
+}*/
 
 
 extension String {
