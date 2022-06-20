@@ -10,16 +10,7 @@ import Kingfisher
 
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cast.count
-        
-    }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = castCollectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CastCollectionViewCell.self), for: indexPath) as! CastCollectionViewCell
-        cell.configure(casting: cast[indexPath.row])
-        return cell
-    }
     
     
     
@@ -35,8 +26,20 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var thirdView: UIView!
     
     @IBOutlet weak var genresStackView: UIStackView!
-    @IBOutlet weak var genresCollectionView: UICollectionView!
-    
+    @IBOutlet weak var genresCollectionView: UICollectionView! {
+        didSet {
+            genresCollectionView.dataSource = self
+            genresCollectionView.delegate = self
+            genresCollectionView.register(UINib(nibName: String(describing: GenresCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: GenresCollectionViewCell.self))
+            let design: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+            design.itemSize = CGSize(width: 120, height: 50)
+            design.scrollDirection = .horizontal
+              design.minimumInteritemSpacing = 5
+
+                    genresCollectionView.collectionViewLayout = design
+            
+        }
+    }
     
     @IBOutlet weak var raitingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -60,16 +63,37 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         castCollectionView.dataSource = self
         castCollectionView.delegate = self
         castCollectionView.register(UINib(nibName: String(describing: CastCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: CastCollectionViewCell.self))
-        
+        let design: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        design.itemSize = CGSize(width: 100, height: 250)
+        design.scrollDirection = .horizontal
+          design.minimumInteritemSpacing = 5
+
+                castCollectionView.collectionViewLayout = design
+        castCollectionView.reloadData()
         
         }
     }
-    
-    
+
     
     @IBOutlet weak var recommStackView: UIStackView!
     @IBOutlet weak var recommLabel: UILabel!
-    @IBOutlet weak var recommCollectionView: UICollectionView!
+    @IBOutlet weak var recommCollectionView: UICollectionView!{
+        didSet {
+            recommCollectionView.dataSource = self
+            recommCollectionView.delegate = self
+            recommCollectionView.register(UINib(nibName: String(describing: CastCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: CastCollectionViewCell.self))
+            let design: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+            design.itemSize = CGSize(width: 100, height: 250)
+            design.scrollDirection = .horizontal
+              design.minimumInteritemSpacing = 5
+
+                    recommCollectionView.collectionViewLayout = design
+            
+            
+            }
+        }
+        
+    
 
     
     
@@ -79,13 +103,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     private let detailServices: DetailServicesProtocol = DetailServices()
     private var details: DetailModel?
     private var cast: [creditsModel] = []
+    private var recomm: [ListModel] = []
+    private var genres: [Genres] = []
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
     var id : Int?
     
     override func viewDidLoad() {
         getDetails()
         getCast()
-        
+        getRecomm()
         
     
     }
@@ -149,6 +175,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             if let raiting = movie.vote_average {
                 raitingLabel.text = "VOTE AVERAGE: \(String(raiting))"
             }
+            if let genres = movie.genres {
+                self.genres = genres
+                genresCollectionView.reloadData()
+            }
         }
     }
            
@@ -178,32 +208,98 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 }
         
     }
- 
+    func getRecomm () {
+        if let movieID = id {
+            RecommendationServices.shared.getRecommendation(movieid: movieID) { result in
+                switch result {
+
+                        case .success(let response):
+                    if let recomm = response.results {
+                        
+                    self.recomm = recomm
+                        self.recommCollectionView.reloadData()
+                    }
+                            
+
+                        case .failure(let error):
+
+                            print(error)
+
+                        }
+            }
+        }
+    }
     func getCast () {
-        if let castID = id {
-        castServices.getCast(movieid: castID) { result in
-            switch result {
+        if let movieID = id {
+            CreditsServices.shared.getCredits(movieid: movieID) {
+                result in
+                switch result {
 
-                    case .success(let response):
-                if let cast = response.cast {
-                    
-                self.cast = cast
-                }
-                        self.configure()
+                        case .success(let response):
+                    if let cast = response.cast {
+                        
+                    self.cast = cast
+                        self.castCollectionView.reloadData()
+                    }
+                            
 
-                    case .failure(let error):
+                        case .failure(let error):
 
-                        print(error)
+                            print(error)
+
+                        }
 
                     }
-
-                }
-
-            }
             
+                }
+                
+            }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch collectionView {
+        case castCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CastCollectionViewCell.self), for: indexPath) as! CastCollectionViewCell
+            cell.configure(casting: cast[indexPath.row])
+            return cell
+        case recommCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CastCollectionViewCell.self), for: indexPath) as! CastCollectionViewCell
+            cell.configureRecomm(movie: recomm[indexPath.row])
+            return cell
+        case genresCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: GenresCollectionViewCell.self), for: indexPath) as! GenresCollectionViewCell
+            cell.genreLabel.text = genres[indexPath.row].name
+            return cell
+
+        default:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CastCollectionViewCell.self), for: indexPath)
+            return cell
         }
         }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch collectionView {
+
+               case genresCollectionView:
+
+            return genres.count
+
+               case castCollectionView:
+
+                   return cast.count
+
+               case recommCollectionView:
+
+            return recomm.count
+
+               default:
+
+                   return 0
+
+               }
+    }
+    
+            }
+            
+   
 /*func configureCell() {
     if let castdetail = cast {
         if let name = castdetail.name{

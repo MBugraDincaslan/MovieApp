@@ -12,7 +12,7 @@ protocol RecommendationServicesProtocol {
 }
 
 struct RecommendationServices: RecommendationServicesProtocol {
-
+    static let shared = RecommendationServices()
 
     private let network = Network()
     
