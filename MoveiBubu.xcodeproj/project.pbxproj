@@ -25,6 +25,9 @@
 		6FAD496F2860C74F00CFD949 /* BigCastServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD496E2860C74F00CFD949 /* BigCastServices.swift */; };
 		6FAD49722860D69A00CFD949 /* GenresCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD49702860D69A00CFD949 /* GenresCollectionViewCell.swift */; };
 		6FAD49732860D69A00CFD949 /* GenresCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAD49712860D69A00CFD949 /* GenresCollectionViewCell.xib */; };
+		6FAD49772863155F00CFD949 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 6FAD49762863155F00CFD949 /* Realm */; };
+		6FAD49792863155F00CFD949 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FAD49782863155F00CFD949 /* RealmSwift */; };
+		6FAD497C2863236C00CFD949 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD497B2863236C00CFD949 /* Data.swift */; };
 		6FF1718A285B76EC00A689A9 /* CastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17188285B76EC00A689A9 /* CastCollectionViewCell.swift */; };
 		6FF1718B285B76EC00A689A9 /* CastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17189285B76EC00A689A9 /* CastCollectionViewCell.xib */; };
 		6FF17194285B7AA600A689A9 /* castModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17193285B7AA600A689A9 /* castModel.swift */; };
@@ -84,6 +87,7 @@
 		6FAD496E2860C74F00CFD949 /* BigCastServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCastServices.swift; sourceTree = "<group>"; };
 		6FAD49702860D69A00CFD949 /* GenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresCollectionViewCell.swift; sourceTree = "<group>"; };
 		6FAD49712860D69A00CFD949 /* GenresCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresCollectionViewCell.xib; sourceTree = "<group>"; };
+		6FAD497B2863236C00CFD949 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		6FF17188285B76EC00A689A9 /* CastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCollectionViewCell.swift; sourceTree = "<group>"; };
 		6FF17189285B76EC00A689A9 /* CastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastCollectionViewCell.xib; sourceTree = "<group>"; };
 		6FF17193285B7AA600A689A9 /* castModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = castModel.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAD49792863155F00CFD949 /* RealmSwift in Frameworks */,
+				6FAD49772863155F00CFD949 /* Realm in Frameworks */,
 				6FF98121285A041C00D58AD1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +157,7 @@
 		6F68057E2859FAA7002AD69C /* MoveiBubu */ = {
 			isa = PBXGroup;
 			children = (
+				6FAD497A2863232F00CFD949 /* Data */,
 				6FF98127285A056200D58AD1 /* Network */,
 				6F6805BE2859FC5B002AD69C /* List */,
 				6FF98132285A069D00D58AD1 /* Detail */,
@@ -202,11 +209,12 @@
 			path = BigCast;
 			sourceTree = "<group>";
 		};
-		6FAD49742860E44700CFD949 /* recomm */ = {
+		6FAD497A2863232F00CFD949 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				6FAD497B2863236C00CFD949 /* Data.swift */,
 			);
-			path = recomm;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		6FF17187285B76D300A689A9 /* cast */ = {
@@ -274,7 +282,6 @@
 		6FF98132285A069D00D58AD1 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				6FAD49742860E44700CFD949 /* recomm */,
 				6FAD496928609C4200CFD949 /* BigCast */,
 				6FF17192285B79A000A689A9 /* character */,
 				6FF17191285B799200A689A9 /* genres */,
@@ -302,6 +309,8 @@
 			name = MoveiBubu;
 			packageProductDependencies = (
 				6FF98120285A041C00D58AD1 /* Kingfisher */,
+				6FAD49762863155F00CFD949 /* Realm */,
+				6FAD49782863155F00CFD949 /* RealmSwift */,
 			);
 			productName = MoveiBubu;
 			productReference = 6F68057C2859FAA7002AD69C /* MoveiBubu.app */;
@@ -377,6 +386,7 @@
 			mainGroup = 6F6805732859FAA7002AD69C;
 			packageReferences = (
 				6FF9811F285A041C00D58AD1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6FAD49752863155F00CFD949 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 6F68057D2859FAA7002AD69C /* Products */;
 			projectDirPath = "";
@@ -431,6 +441,7 @@
 				6FF17198285B81E000A689A9 /* creditsModel.swift in Sources */,
 				6FAD49722860D69A00CFD949 /* GenresCollectionViewCell.swift in Sources */,
 				6FF98131285A066300D58AD1 /* DetailModel.swift in Sources */,
+				6FAD497C2863236C00CFD949 /* Data.swift in Sources */,
 				6FF98126285A054100D58AD1 /* ListResponse.swift in Sources */,
 				6F68058A2859FAA7002AD69C /* MoveiBubu.xcdatamodeld in Sources */,
 				6FF171A0285B82D700A689A9 /* CreditsServices.swift in Sources */,
@@ -792,6 +803,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6FAD49752863155F00CFD949 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		6FF9811F285A041C00D58AD1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -803,6 +822,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6FAD49762863155F00CFD949 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FAD49752863155F00CFD949 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		6FAD49782863155F00CFD949 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FAD49752863155F00CFD949 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		6FF98120285A041C00D58AD1 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6FF9811F285A041C00D58AD1 /* XCRemoteSwiftPackageReference "Kingfisher" */;

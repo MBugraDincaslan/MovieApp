@@ -20,13 +20,11 @@ class ListViewController: UIViewController {
     
     private let listServices: ListServicesProtocol = ListServices()
     private var lists: [ListModel] = []
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        
-        
-        listServices.getAllList { result in
+    private var updateLists: [ListModel] = []
+    var page: Int = 1
+    
+    func getMovie(pageNumber: Int) {
+        listServices.getAllList(page: pageNumber) { result in
             switch result {
             case .success(let response):
                 self.lists = response.results ?? []
@@ -36,13 +34,38 @@ class ListViewController: UIViewController {
                 print(error)
             }
         }
+    
+    }
+    func updateList(pageNumber: Int) {
+        listServices.getAllList(page: pageNumber) { result in
+            switch result {
+            case .success(let response):
+                self.updateLists = response.results ?? []
+                print(self.updateLists)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    
+    }
+        
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        getMovie(pageNumber: page)
+        
+        
         // Do any additional setup after loading the view.
     }
     
 
-  
+
 
 }
+
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lists.count
@@ -63,5 +86,28 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         }
     
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == lists.count - 1 {
+            loadMore(status: true)
+        } else {
+            loadMore(status: false)
+        }
+    }
+    func loadMore(status: Bool){
+        if status {
+            //activity indicator start
+            updateList(pageNumber: page + 1)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.lists.append(contentsOf: self.updateLists)
+                self.page += 1
+                self.ListTableView.reloadData()
+                
+            }
+        } else {
+            //activity indicator stopped
+        }
+    }
     
+   
 }

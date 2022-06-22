@@ -108,6 +108,8 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
     var id : Int?
     
+    
+    
     override func viewDidLoad() {
         getDetails()
         getCast()
@@ -124,10 +126,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 nameLabel.text = "TITLE: \(String(name))"
                 
             }
-            if let image = movie.poster_path {
-                if let posterPath = movie.poster_path {
+            
+            if let posterPath = movie.poster_path {
 
-                            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
+                        if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
 
                                 imageView.kf.setImage(with: imageURL)
 
@@ -142,7 +144,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                             imageView.image = nil
 
                         }
-            }
+           
             
             if let otitle = movie.original_title {
                 orginalTitleLabel.text = "ORGINAL TITLE: \(String(otitle))"
