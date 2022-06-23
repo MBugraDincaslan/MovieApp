@@ -11,9 +11,6 @@ import Kingfisher
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    
-    
-    
     @IBOutlet var firstView: UIView!
     @IBOutlet weak var firstScrollView: UIScrollView!
     @IBOutlet weak var secondView: UIView!
@@ -298,10 +295,22 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
 
                }
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch collectionView {
+        case recommCollectionView:
+            if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {
+                detailVC.id = recomm[indexPath.row].id
+                self.navigationController?.pushViewController(detailVC, animated: true)
+                
             }
+        default:
+            if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {
+                detailVC.id = recomm[indexPath.row].id
+                self.navigationController?.pushViewController(detailVC, animated: true)
+                
+        }
             
-   
+    }
 /*func configureCell() {
     if let castdetail = cast {
         if let name = castdetail.name{
@@ -332,8 +341,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
 
 }*/
 
-
-extension String {
+/*extension String {
 func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
   let _font = font ?? UIFont.systemFont(ofSize: 14, weight: .regular)
   let fullString = NSMutableAttributedString(string: self, attributes: [NSAttributedString.Key.font: _font])
@@ -341,6 +349,8 @@ func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
   let range = (self as NSString).range(of: text)
   fullString.addAttributes(boldFontAttribute, range: range)
   return fullString
-}}
+}}*/
 
 
+    }
+}
