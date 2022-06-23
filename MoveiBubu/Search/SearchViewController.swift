@@ -9,7 +9,8 @@ import UIKit
 
 
 class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var searchBar: UISearchBar! 
+     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTableView: UITableView! {
         didSet {
             searchListTableView.dataSource = self
@@ -17,53 +18,61 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             searchListTableView.register(UINib(nibName: String(describing: ListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ListTableViewCell.self))
         }
     }
-    private var lists: [ListModel] = []
     private var searchResults: [ListModel] = []
-    var searchController: UISearchController!
+    private let listServices: ListServicesProtocol = ListServices()
+    var searchController: UISearchBar!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Add a Search Bar Programmtically
-                searchController = UISearchController(searchResultsController: nil)
-                searchListTableView.tableHeaderView = searchController.searchBar
-                
-                searchController.obscuresBackgroundDuringPresentation = false
-
-                // Search Bar options
-                searchController.searchBar.placeholder = ""
-                
-                // Search Bar Disappears when tapped, hence the code line below is a MUST
-                searchController.hidesNavigationBarDuringPresentation = false
-                // Add a colour border for the search bar
-                searchController.searchBar.tintColor = UIColor.purple
         
+        searchBar.delegate = self
     }
-   
+   //MARK: - tableview configure
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-                if searchController.isActive {
-                    return searchResults.count
-                } else {
-                    return lists.count
-                    
-                }
+        return searchResults.count
             }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchListTableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self), for: indexPath) as! ListTableViewCell
-        cell.configure(movie: lists[indexPath.row])
+        cell.configure(movie: searchResults[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {
-            detailVC.id = lists[indexPath.row].id
+            detailVC.id = searchResults[indexPath.row].id
             self.navigationController?.pushViewController(detailVC, animated: true)
             
         }
     
     }
+    
+
+
+//MARK: -listeleme fonksiyonu
+func getSearch(text: String){
+    listServices.getSearch(moon: text) { result in
+        switch result {
+
+                case .success(let response):
+
+            self.searchResults = response.results ?? []
+            self.searchListTableView.reloadData()
+
+
+                case .failure(let error):
+
+                    print(error)
+
+                }
+
+    }
 }
-
-
+   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+       DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+           self.getSearch(text: searchText)
+           
+       }
+    }
+}

@@ -331,29 +331,12 @@
         <!--Favorites-->
         <scene sceneID="Xh0-4g-T1B">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="9Hl-6N-IT9" customClass="SearchViewController" customModule="MoveiBubu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="9Hl-6N-IT9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="03s-YP-Ngw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="D7V-kA-oXf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <searchBar key="tableFooterView" contentMode="redraw" id="aYx-KT-mn4">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="V4R-aO-2K7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="D7V-kA-oXf" firstAttribute="top" secondItem="03s-YP-Ngw" secondAttribute="top" id="PLJ-li-S0e"/>
-                            <constraint firstItem="D7V-kA-oXf" firstAttribute="leading" secondItem="V4R-aO-2K7" secondAttribute="leading" id="aZ6-Pk-yqX"/>
-                            <constraint firstAttribute="bottom" secondItem="D7V-kA-oXf" secondAttribute="bottom" id="qgG-0I-Onv"/>
-                            <constraint firstItem="D7V-kA-oXf" firstAttribute="trailing" secondItem="V4R-aO-2K7" secondAttribute="trailing" id="uFx-ke-0er"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" id="btA-1I-3T5">
                         <imageReference key="image" image="star.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
@@ -364,10 +347,6 @@
                             </hierarchicalColors>
                         </imageReference>
                     </tabBarItem>
-                    <connections>
-                        <outlet property="searchBar" destination="aYx-KT-mn4" id="vsK-xp-5Dd"/>
-                        <outlet property="searchListTableView" destination="D7V-kA-oXf" id="qYW-JD-hLW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-qo-OXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,12 +392,31 @@
         <!--Search-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoveiBubu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="MoveiBubu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7tL-34-jCl">
+                                <rect key="frame" x="0.0" y="151" width="414" height="745"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vne-G8-YKy">
+                                <rect key="frame" x="0.0" y="100" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7tL-34-jCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8v2-gY-9db"/>
+                            <constraint firstItem="vne-G8-YKy" firstAttribute="trailing" secondItem="7tL-34-jCl" secondAttribute="trailing" id="9gZ-fv-pIQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7tL-34-jCl" secondAttribute="bottom" constant="-83" id="BEe-Eo-X9k"/>
+                            <constraint firstItem="7tL-34-jCl" firstAttribute="top" secondItem="vne-G8-YKy" secondAttribute="bottom" id="N0t-2f-tLe"/>
+                            <constraint firstItem="7tL-34-jCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qd8-wj-c6m"/>
+                            <constraint firstItem="vne-G8-YKy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="d5a-KK-PNS"/>
+                            <constraint firstItem="vne-G8-YKy" firstAttribute="leading" secondItem="7tL-34-jCl" secondAttribute="leading" id="tlA-21-lEY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="T0h-lk-vxc">
                         <imageReference key="image" image="magnifyingglass" catalog="system" renderingMode="hierarchical-single">
@@ -430,10 +428,14 @@
                         </imageReference>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="vne-G8-YKy" id="14v-TC-fhh"/>
+                        <outlet property="searchListTableView" destination="7tL-34-jCl" id="X9g-Xq-XzN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-458" y="836"/>
+            <point key="canvasLocation" x="-459.4202898550725" y="835.71428571428567"/>
         </scene>
     </scenes>
     <resources>
