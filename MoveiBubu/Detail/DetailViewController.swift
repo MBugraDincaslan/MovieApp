@@ -95,13 +95,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     
     
-    
+    private let bigcastservices: BigCastServices = BigCastServices()
     private let castServices: CastServicesProtocol = CastServices()
     private let detailServices: DetailServicesProtocol = DetailServices()
     private var details: DetailModel?
     private var cast: [creditsModel] = []
     private var recomm: [ListModel] = []
     private var genres: [Genres] = []
+    private var bigCast: [castModel] = []
+    private var big: castModel?
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
     var id : Int?
     
@@ -168,8 +170,14 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             if let runtime = movie.runtime {
                 runTimeLabel.text = "RUNTIME: \(String(runtime))"
             }
-            if let productioncompany = movie.production_companies![0].name {
-                productionCompaniesLabel.text = "PRODUCTON COMPANIES: \(String(productioncompany))"
+            if let productioncompany = movie.production_companies {
+                productionCompaniesLabel.text = ""
+                for company in productioncompany {
+                    productionCompaniesLabel.text?.append(" \(company.name ?? "")\n")
+                }
+                
+            }else {
+                productionCompaniesLabel.text = ""
             }
             if let raiting = movie.vote_average {
                 raitingLabel.text = "VOTE AVERAGE: \(String(raiting))"
@@ -253,6 +261,29 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 }
                 
             }
+    /*func getBig() {
+        if let castid = id {
+            BigCastServices.shared.getBigCast(personid: castid) {
+                result in
+                switch result {
+
+                        case .success(let response):
+                    if let bigcast = response.cast {
+                        
+                    self.bigCast = bigcast
+                        self.castCollectionView.reloadData()
+                    }
+                            
+
+                        case .failure(let error):
+
+                            print(error)
+
+                        }
+
+                    }
+        }
+    }*/
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView {
         case castCollectionView:
@@ -302,6 +333,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 detailVC.id = recomm[indexPath.row].id
                 self.navigationController?.pushViewController(detailVC, animated: true)
                 
+            }
+        case castCollectionView:
+            if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: BigCastViewController.self)) as? BigCastViewController {
+                detailVC.id = cast[indexPath.row].id
+                self.navigationController?.pushViewController(detailVC, animated: true)
             }
         default:
             if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {

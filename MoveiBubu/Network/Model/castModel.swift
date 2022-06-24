@@ -17,3 +17,4 @@ struct castModel: Codable {
     let deathday: String?
     let place_of_birth: String?
 }
+
