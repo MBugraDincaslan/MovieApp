@@ -10,6 +10,7 @@
 		6F5C5AA528638108002D13CA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C5AA428638108002D13CA /* SearchViewController.swift */; };
 		6F5C5AA728646B78002D13CA /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C5AA628646B78002D13CA /* SearchFilter.swift */; };
 		6F5C5AA928649290002D13CA /* BigCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C5AA828649290002D13CA /* BigCastViewController.swift */; };
+		6F5C5AAB28689C81002D13CA /* DataMngr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C5AAA28689C81002D13CA /* DataMngr.swift */; };
 		6F6805802859FAA7002AD69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F68057F2859FAA7002AD69C /* AppDelegate.swift */; };
 		6F6805822859FAA7002AD69C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6805812859FAA7002AD69C /* SceneDelegate.swift */; };
 		6F6805842859FAA7002AD69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6805832859FAA7002AD69C /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 		6F5C5AA428638108002D13CA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6F5C5AA628646B78002D13CA /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
 		6F5C5AA828649290002D13CA /* BigCastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCastViewController.swift; sourceTree = "<group>"; };
+		6F5C5AAA28689C81002D13CA /* DataMngr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMngr.swift; sourceTree = "<group>"; };
 		6F68057C2859FAA7002AD69C /* MoveiBubu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveiBubu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F68057F2859FAA7002AD69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F6805812859FAA7002AD69C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				6FAD497B2863236C00CFD949 /* Data.swift */,
+				6F5C5AAA28689C81002D13CA /* DataMngr.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				6FAD496C28609C6200CFD949 /* BigCastCollectionViewCell.swift in Sources */,
 				6FF171A2285CCF8300A689A9 /* CastResponse.swift in Sources */,
 				6F6805822859FAA7002AD69C /* SceneDelegate.swift in Sources */,
+				6F5C5AAB28689C81002D13CA /* DataMngr.swift in Sources */,
 				6F6805BC2859FC56002AD69C /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

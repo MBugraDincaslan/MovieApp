@@ -114,6 +114,9 @@
                                                                                 </hierarchicalColors>
                                                                             </imageReference>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="favoritesButton:" destination="UMV-DG-Rvj" eventType="touchUpInside" id="fqH-uH-pQS"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ou-iM-jS9">
                                                                         <rect key="frame" x="322" y="0.0" width="60" height="50"/>
@@ -305,7 +308,6 @@
                         <outlet property="castLabel" destination="W0Z-Px-mqG" id="I0w-gN-VFm"/>
                         <outlet property="castStackView" destination="Twk-de-o9k" id="ln5-ni-8Pr"/>
                         <outlet property="companiesStackView" destination="zV6-9X-R3P" id="0sX-kA-2N2"/>
-                        <outlet property="favoriteButton" destination="dt8-rk-hQT" id="5cQ-qS-JFz"/>
                         <outlet property="firstScrollView" destination="bXh-Q6-h8w" id="iGh-gL-7Z4"/>
                         <outlet property="firstView" destination="aGY-k4-4Lu" id="2X0-qg-F66"/>
                         <outlet property="genresCollectionView" destination="8n2-Em-wKt" id="hdO-2j-3wX"/>

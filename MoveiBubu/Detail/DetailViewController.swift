@@ -17,7 +17,18 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var homepageLink: UIButton!
-    @IBOutlet weak var favoriteButton: UIButton!
+    @IBAction func favoritesButton(_ sender: Any) {
+        if let movie = details {
+            if let Id = id {
+                DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
+            }
+        
+            
+        }
+        
+    }
+    
+    
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var secondStackView: UIStackView!
     @IBOutlet weak var thirdView: UIView!
