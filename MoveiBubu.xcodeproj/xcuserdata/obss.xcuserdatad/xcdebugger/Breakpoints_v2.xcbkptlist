@@ -52,5 +52,177 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37B6469A-7ED8-4FB2-90C3-7107A3209E72"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Detail/Favorites/FavoritesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FavoritesViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862 - 84fa89d97e43ac27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.FavoritesViewController.lists.getter : Swift.Array&lt;MoveiBubu.Task&gt;"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/MoveiBubu/MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862 - 8f04ce08a0250833"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.FavoritesViewController.lists.setter : Swift.Array&lt;MoveiBubu.Task&gt;"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/MoveiBubu/MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862 - 54ff4820cf903b20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.FavoritesViewController.lists.modify : Swift.Array&lt;MoveiBubu.Task&gt;"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/MoveiBubu/MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862 - 3ab2483d83525dc8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.FavoritesViewController.lists.modify : Swift.Array&lt;MoveiBubu.Task&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/MoveiBubu/MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862 - 266d612ef491e5a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.FavoritesViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MoveiBubu.FavoritesViewController"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/MoveiBubu/MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "3C9BF164-5950-49B8-B325-EF03C2BCB862 - 563a773736e1536b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.FavoritesViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MoveiBubu.FavoritesViewController&gt;"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/MoveiBubu/MoveiBubu/Detail/Favorites/FavoritesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F738C52-23FA-4117-9ED7-033619A7CE40"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Detail/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "favoritesButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50D2685E-363D-4A31-9D00-7E4E4277B6CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Data/DataMngr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "UpdateFavorites(id:title:release_date:poster_path:vote_average:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37CB69CB-6148-4084-83C3-698A76B1FD71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Data/DataMngr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "arrayFavaorites()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

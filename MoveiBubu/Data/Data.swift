@@ -10,11 +10,11 @@ import RealmSwift
 
 class Task: Object {
     
-    dynamic var id: Int?
-    dynamic var title: String? = ""
-    dynamic var releaseDate: String? = ""
-    dynamic var poster_path: String? = ""
-    dynamic var vote_average: Double? = 0
+    @Persisted(primaryKey: true) var id: Int = 0
+    @Persisted var title: String = ""
+    @Persisted var releaseDate: String = ""
+    @Persisted var poster_path: String = ""
+    @Persisted var vote_average: Double = 0
 
 
 

@@ -68,10 +68,13 @@ struct DataMngr {
     }
     func arrayFavaorites() -> [Task] {
         let favorites = realm.objects(Task.self)
-        return favorites
-    }
+        print("data mgr print\(Array(favorites))")
+            return Array(favorites)
+        
+        }
+}
     
 
-}
+
 
 

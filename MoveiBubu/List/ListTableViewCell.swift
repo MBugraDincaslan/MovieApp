@@ -13,6 +13,8 @@ class ListTableViewCell: UITableViewCell {
 
 
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
+    var id: Int?
+    var movie: ListModel?
    
     
    
@@ -29,6 +31,22 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var releaseDateLabel: UILabel!
     
     @IBOutlet weak var raitingLabel: UILabel!
+    
+    func favConfigure (movie: Task) {
+        let str = movie.poster_path
+        let imageURL: URL = URL(string: "\(baseImageURL)\(str)")! 
+     
+        movieImageView.kf.setImage(with: imageURL)
+        
+        movieNameLabel.text = movie.title
+        releaseDateLabel.text = movie.releaseDate
+        raitingLabel.text = "IMDB: \(String(movie.vote_average))"
+        
+        
+        
+        
+        
+    }
     
     func configure (movie: ListModel){
         /*let lastUrl = baseURL + "\(String(describing:movie.id))" + "/" + "\(String(describing: movie.poster_path))"
@@ -74,6 +92,8 @@ class ListTableViewCell: UITableViewCell {
             raitingLabel.text = "IMDB: \(String(rait))"
             
         }
+        id = movie.id
+        self.movie = movie
         
       
     }
@@ -82,9 +102,14 @@ class ListTableViewCell: UITableViewCell {
     
 
     @IBAction func FavoriteButton(_ sender: Any) {
+       if let movie = movie {
+           if let Id = id {
+           DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
+            }
+        
+       }
         
         
-
     }
   /*  func backrounds (movie: ListModel) {
         if let cellBackgroundView = movie.backdrop_path {
