@@ -90,6 +90,7 @@
                 <constraint firstItem="f4t-Cs-ACM" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="dJ9-Ct-5cm"/>
             </constraints>
             <connections>
+                <outlet property="FavoriteState" destination="Ret-kY-NaR" id="naj-wj-oOu"/>
                 <outlet property="backRoundImage" destination="f4t-Cs-ACM" id="vwp-97-zX2"/>
                 <outlet property="movieImageView" destination="SzM-ce-tal" id="XEz-9y-2Vx"/>
                 <outlet property="movieNameLabel" destination="Lm2-wa-sXP" id="2Sy-rk-sIr"/>

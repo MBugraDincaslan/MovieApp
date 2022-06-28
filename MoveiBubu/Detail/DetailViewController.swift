@@ -16,7 +16,16 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var secondView: UIView!
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var homepageLink: UIButton!
+
+    @IBAction func homepageLink(_ sender: Any) {
+       if let webpageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: WebViewController.self)) as? WebViewController{
+
+           webpageVC.link = URL(string: (details?.homepage)!)//homepage string datası gönderilecek
+
+                    self.navigationController?.pushViewController(webpageVC, animated: true)
+
+                }
+    }
     @IBAction func favoritesButton(_ sender: Any) {
         if let movie = details {
             if let Id = id {
@@ -179,7 +188,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 overViewLabel.text = "\n OVERVIEW:\n \(String(overview))"
             }
             if let runtime = movie.runtime {
-                runTimeLabel.text = "RUNTIME: \(String(runtime))"
+                runTimeLabel.text = "RUNTIME: \(String(runtime))".localized()
             }
             if let productioncompany = movie.production_companies {
                 productionCompaniesLabel.text = ""
@@ -400,4 +409,13 @@ func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
 
 
     }
+}
+extension String { // string tipler,ni lokalize etmek için dahil edilmiş olan eklenti.
+
+    func localized() -> String {
+
+        return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
+
+    }
+
 }

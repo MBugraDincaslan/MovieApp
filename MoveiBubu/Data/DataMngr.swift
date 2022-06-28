@@ -68,10 +68,21 @@ struct DataMngr {
     }
     func arrayFavaorites() -> [Task] {
         let favorites = realm.objects(Task.self)
-        print("data mgr print\(Array(favorites))")
+        /*print("data mgr print\(Array(favorites))")*/
             return Array(favorites)
         
         }
+    func checkFavorites(check: Int?) -> Bool {
+        var intarray: [Int?] = []
+        let list = realm.objects(Task.self)
+        for ID in list {
+            let saveid = ID.id
+            let intid = Int(saveid)
+            intarray.append(intid)
+        }
+        return intarray.contains(check)
+        
+    }
 }
     
 

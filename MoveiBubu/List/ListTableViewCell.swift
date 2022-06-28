@@ -42,11 +42,20 @@ class ListTableViewCell: UITableViewCell {
         releaseDateLabel.text = movie.releaseDate
         raitingLabel.text = "IMDB: \(String(movie.vote_average))"
         
+        //read fonksiyonu çağıracak
+        //indexpathrow.id
+        //array search
         
         
+        checkStatus()
         
         
     }
+    /*func checkFavorites (check: Int) {
+        var list = DataMngr.sharedData.arrayFavaorites()
+        list.contains(check)
+        }
+    }*/
     
     func configure (movie: ListModel){
         /*let lastUrl = baseURL + "\(String(describing:movie.id))" + "/" + "\(String(describing: movie.poster_path))"
@@ -94,14 +103,22 @@ class ListTableViewCell: UITableViewCell {
         }
         id = movie.id
         self.movie = movie
-        
+        checkStatus()
       
     }
     
     
     
-
-    @IBAction func FavoriteButton(_ sender: Any) {
+    @IBOutlet weak var FavoriteState: UIButton!
+    
+    func checkStatus () {
+        if DataMngr.sharedData.checkFavorites(check: id) {
+            FavoriteState.setImage(UIImage(systemName: "Star.fill"), for: UIControl.State.normal)
+            
+        }
+    }
+    
+        @IBAction func FavoriteButton(_ sender: Any) {
        if let movie = movie {
            if let Id = id {
            DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)

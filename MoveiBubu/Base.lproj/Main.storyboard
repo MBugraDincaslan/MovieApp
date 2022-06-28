@@ -133,6 +133,9 @@
                                                                                 </hierarchicalColors>
                                                                             </imageReference>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="homepageLink:" destination="UMV-DG-Rvj" eventType="touchUpInside" id="sua-Mn-hkD"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -312,7 +315,6 @@
                         <outlet property="firstView" destination="aGY-k4-4Lu" id="2X0-qg-F66"/>
                         <outlet property="genresCollectionView" destination="8n2-Em-wKt" id="hdO-2j-3wX"/>
                         <outlet property="genresStackView" destination="qCw-Xk-D6n" id="oWb-gO-LVs"/>
-                        <outlet property="homepageLink" destination="8Ou-iM-jS9" id="g6Z-eg-JKb"/>
                         <outlet property="imageView" destination="9FM-eQ-Qe9" id="9rM-FY-xHM"/>
                         <outlet property="nameLabel" destination="0Dh-d2-kQ2" id="FCX-Ic-LkW"/>
                         <outlet property="orginalLanguageLabel" destination="Y67-sr-GRI" id="FvS-LD-ZIb"/>
@@ -476,6 +478,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-qo-OXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-457.97101449275368" y="-631.47321428571422"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="IK0-A9-I2y">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="Jax-ay-a4l" customClass="WebViewController" customModule="MoveiBubu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="000-0s-xHa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8uk-c5-UVx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcA-ci-Qhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-631"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="em8-Vx-i1R">
