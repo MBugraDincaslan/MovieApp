@@ -30,12 +30,13 @@ struct DataMngr {
             return self.realm
 
         }
-    func UpdateFavorites(id: Int, title: String, release_date: String, poster_path: String, vote_average: Double) {
+    func UpdateFavorites(id: Int, title: String = "", release_date: String = "", poster_path: String = "", vote_average: Double = 0) -> Bool {
         if let movie = realm.object(ofType: Task.self, forPrimaryKey: id) {
             DeleteFavorites(movie: movie)
-            
+            return false
         } else {
             AddFavorites(id: id, title: title, release_date: release_date, poster_path: poster_path, vote_average: vote_average)
+            return true
         }
             
     }
@@ -73,16 +74,15 @@ struct DataMngr {
         
         }
     func checkFavorites(check: Int?) -> Bool {
-        var intarray: [Int?] = []
-        let list = realm.objects(Task.self)
-        for ID in list {
-            let saveid = ID.id
-            let intid = Int(saveid)
-            intarray.append(intid)
+        if let _ = realm.object(ofType: Task.self, forPrimaryKey: check) {
+            return true
+        } else {
+            return false
+            
         }
-        return intarray.contains(check)
         
     }
+    
 }
     
 

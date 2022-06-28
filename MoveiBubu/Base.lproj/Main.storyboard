@@ -311,6 +311,7 @@
                         <outlet property="castLabel" destination="W0Z-Px-mqG" id="I0w-gN-VFm"/>
                         <outlet property="castStackView" destination="Twk-de-o9k" id="ln5-ni-8Pr"/>
                         <outlet property="companiesStackView" destination="zV6-9X-R3P" id="0sX-kA-2N2"/>
+                        <outlet property="favoritesButton" destination="dt8-rk-hQT" id="KUS-aB-pAr"/>
                         <outlet property="firstScrollView" destination="bXh-Q6-h8w" id="iGh-gL-7Z4"/>
                         <outlet property="firstView" destination="aGY-k4-4Lu" id="2X0-qg-F66"/>
                         <outlet property="genresCollectionView" destination="8n2-Em-wKt" id="hdO-2j-3wX"/>

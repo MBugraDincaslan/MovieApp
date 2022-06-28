@@ -10,6 +10,7 @@ import Kingfisher
 
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    var favorite: Task?
     
     @IBOutlet var firstView: UIView!
     @IBOutlet weak var firstScrollView: UIScrollView!
@@ -26,10 +27,27 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
 
                 }
     }
+    @IBOutlet weak var favoritesButton: UIButton!
+    func checkStatus (Status: Bool) {
+        if Status {
+            favoritesButton.setImage(UIImage(systemName: "star.fill"), for: UIControl.State.normal)
+            favoritesButton.tintColor = UIColor.systemYellow
+        } else {
+            favoritesButton.setImage(UIImage(systemName: "star"), for: UIControl.State.normal)
+            favoritesButton.tintColor = UIColor.systemYellow
+        }
+    }
     @IBAction func favoritesButton(_ sender: Any) {
+        
+        
         if let movie = details {
             if let Id = id {
-                DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
+                let isFavorites = DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
+                      checkStatus(Status: isFavorites)
+                checkStatus(Status: isFavorites)
+            } else if let favorite = favorite {
+                DataMngr.sharedData.DeleteFavorites(movie: favorite)
+                checkStatus(Status: false)
             }
         
         
@@ -129,6 +147,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     
     
+    
     override func viewDidLoad() {
         getDetails()
         getCast()
@@ -136,7 +155,14 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     
+       let answer = DataMngr.sharedData.checkFavorites(check: id)
+        checkStatus(Status: answer )
+        
+        
+    }
     
     func configure (){
        
@@ -173,19 +199,19 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             
             if let release = movie.release_date {
-                releaseDateLabel.text = "RELEASE DATE: \(String(release))"
+                releaseDateLabel.text = "RELEASE DATE: \(String(release))".localized()
             }
             if let budget = movie.budget{
-                budgetLabel.text = "BUDGET: \(String(budget))"
+                budgetLabel.text = "BUDGET: \(String(budget))".localized()
             }
             if let revenue = movie.revenue {
-                revenueLabel.text = "REVENUE: \(String(revenue))"
+                revenueLabel.text = "REVENUE: \(String(revenue))".localized()
             }
             /*if let genres = movie.genres![0].name {
                 genresLabel.text = "GENRES: \(String(genres))"
             }*/
             if let overview = movie.overview {
-                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))"
+                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))".localized()
             }
             if let runtime = movie.runtime {
                 runTimeLabel.text = "RUNTIME: \(String(runtime))".localized()
@@ -200,7 +226,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 productionCompaniesLabel.text = ""
             }
             if let raiting = movie.vote_average {
-                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))"
+                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))".localized()
             }
             if let genres = movie.genres {
                 self.genres = genres

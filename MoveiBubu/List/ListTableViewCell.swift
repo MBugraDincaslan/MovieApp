@@ -15,6 +15,7 @@ class ListTableViewCell: UITableViewCell {
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
     var id: Int?
     var movie: ListModel?
+    var favorite: Task?
    
     
    
@@ -46,8 +47,12 @@ class ListTableViewCell: UITableViewCell {
         //indexpathrow.id
         //array search
         
+        favorite = movie
         
-        checkStatus()
+        id = movie.id
+        
+        checkStatus(Status: true)
+        
         
         
     }
@@ -103,7 +108,7 @@ class ListTableViewCell: UITableViewCell {
         }
         id = movie.id
         self.movie = movie
-        checkStatus()
+        checkStatus(Status: DataMngr.sharedData.checkFavorites(check: id))
       
     }
     
@@ -111,19 +116,26 @@ class ListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var FavoriteState: UIButton!
     
-    func checkStatus () {
-        if DataMngr.sharedData.checkFavorites(check: id) {
-            FavoriteState.setImage(UIImage(systemName: "Star.fill"), for: UIControl.State.normal)
-            
+    func checkStatus (Status: Bool) {
+        if Status {
+            FavoriteState.setImage(UIImage(systemName: "star.fill"), for: UIControl.State.normal)
+            FavoriteState.tintColor = UIColor.systemYellow
+        } else {
+            FavoriteState.setImage(UIImage(systemName: "star"), for: UIControl.State.normal)
+            FavoriteState.tintColor = UIColor.systemYellow
         }
     }
     
         @IBAction func FavoriteButton(_ sender: Any) {
        if let movie = movie {
            if let Id = id {
-           DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
+        let isFavorites = DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
+              checkStatus(Status: isFavorites)
             }
-        
+           
+       } else if let favorite = favorite {
+           DataMngr.sharedData.DeleteFavorites(movie: favorite)
+           checkStatus(Status: false)
        }
         
         

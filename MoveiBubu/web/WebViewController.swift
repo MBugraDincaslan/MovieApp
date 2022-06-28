@@ -26,7 +26,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
             webView.allowsBackForwardNavigationGestures = true
             
         } else {
-            let alertVC = UIAlertController(title: "Error", message: "ACILMIYOR", preferredStyle: .alert)
+            let alertVC = UIAlertController(title: "Error", message: "Bu Filmin Linki Yoktur! Anlayış için Teşekkür Ederiz!", preferredStyle: .alert)
 
                     let okButton = UIAlertAction(title: "OK", style: .default) { action in
 
