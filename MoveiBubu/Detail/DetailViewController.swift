@@ -397,35 +397,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             
         }
-/*func configureCell() {
-    if let castdetail = cast {
-        if let name = castdetail.name{
-            nameLabel.text = "TITLE: \(String(name))"
-            
-        }
-        if let image = movie.poster_path {
-            if let posterPath = movie.poster_path {
-
-                        if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-
-                            imageView.kf.setImage(with: imageURL)
-
-                        } else {
-
-                            imageView.image = nil
-
-                        }
-
-                    } else {
-
-                        imageView.image = nil
-
-                    }
-        }
-    }
-    
-
-}*/
 
 /*extension String {
 func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
@@ -436,16 +407,17 @@ func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
   fullString.addAttributes(boldFontAttribute, range: range)
   return fullString
 }}*/
-
-
+        
     }
+    
 }
+
 extension String { // string tipler,ni lokalize etmek için dahil edilmiş olan eklenti.
 
     func localized() -> String {
 
         return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
-
+        
     }
-
+    
 }

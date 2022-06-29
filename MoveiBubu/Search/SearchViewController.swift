@@ -12,12 +12,16 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
      
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTableView: UITableView! {
+        
         didSet {
             searchListTableView.dataSource = self
             searchListTableView.delegate = self
             searchListTableView.register(UINib(nibName: String(describing: ListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ListTableViewCell.self))
+            
         }
+        
     }
+   
     private var searchResults: [ListModel] = []
     private let listServices: ListServicesProtocol = ListServices()
     var searchController: UISearchBar!
@@ -29,14 +33,17 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         searchBar.delegate = self
     }
    //MARK: - tableview configure
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchResults.count
-            }
+        
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchListTableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self), for: indexPath) as! ListTableViewCell
         cell.configure(movie: searchResults[indexPath.row])
         return cell
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -45,34 +52,39 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
             self.navigationController?.pushViewController(detailVC, animated: true)
             
         }
-    
+        
     }
     
 
 
 //MARK: -listeleme fonksiyonu
-func getSearch(text: String){
-    listServices.getSearch(moon: text) { result in
-        switch result {
 
-                case .success(let response):
-
-            self.searchResults = response.results ?? []
-            self.searchListTableView.reloadData()
-
-
-                case .failure(let error):
-
-                    print(error)
-
-                }
-
+    func getSearch(text: String){
+        listServices.getSearch(moon: text) { result in
+            
+            switch result {
+            
+            case .success(let response):
+                self.searchResults = response.results ?? []
+                self.searchListTableView.reloadData()
+            
+            case .failure(let error):
+                print(error)
+                
+            }
+            
+        }
+        
     }
-}
-   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-       DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-           self.getSearch(text: searchText)
-           
-       }
+   
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            
+            self.getSearch(text: searchText)
+            
+        }
+        
     }
+    
 }
