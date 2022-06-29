@@ -14,22 +14,17 @@ struct DataMngr {
     static let sharedData = DataMngr()
     
     private var realm: Realm {
-
-            do {
-
-                let realm = try Realm()
-
-                return realm
-
-            } catch {
-
-                print("Error initalising new realm, \(error)")
-
-            }
-
-            return self.realm
-
+        do {
+            let realm = try Realm()
+            return realm
+            
+        } catch {
+            print("Error initalising new realm, \(error)")
+            
         }
+        return self.realm
+        
+    }
     func UpdateFavorites(id: Int, title: String = "", release_date: String = "", poster_path: String = "", vote_average: Double = 0) -> Bool {
         if let movie = realm.object(ofType: Task.self, forPrimaryKey: id) {
             DeleteFavorites(movie: movie)
@@ -47,7 +42,9 @@ struct DataMngr {
             }
         } catch {
             print("Deleted ERROR!\(error)")
+            
         }
+        
     }
 
     func AddFavorites(id: Int, title: String, release_date: String, poster_path: String, vote_average: Double) {
@@ -64,6 +61,7 @@ struct DataMngr {
             }
         } catch {
             print("ERROR!\(error)")
+            
         }
         
     }
@@ -72,7 +70,7 @@ struct DataMngr {
         /*print("data mgr print\(Array(favorites))")*/
             return Array(favorites)
         
-        }
+    }
     func checkFavorites(check: Int?) -> Bool {
         if let _ = realm.object(ofType: Task.self, forPrimaryKey: check) {
             return true

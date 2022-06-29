@@ -199,22 +199,22 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             
             if let release = movie.release_date {
-                releaseDateLabel.text = "RELEASE DATE: \(String(release))".localized()
+                releaseDateLabel.text = "RELEASE DATE: \(String(release))"
             }
             if let budget = movie.budget{
-                budgetLabel.text = "BUDGET: \(String(budget))".localized()
+                budgetLabel.text = "BUDGET: \(String(budget))"
             }
             if let revenue = movie.revenue {
-                revenueLabel.text = "REVENUE: \(String(revenue))".localized()
+                revenueLabel.text = "REVENUE: \(String(revenue))"
             }
             /*if let genres = movie.genres![0].name {
                 genresLabel.text = "GENRES: \(String(genres))"
             }*/
             if let overview = movie.overview {
-                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))".localized()
+                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))"
             }
             if let runtime = movie.runtime {
-                runTimeLabel.text = "RUNTIME: \(String(runtime))".localized()
+                runTimeLabel.text = "RUNTIME: \(String(runtime))"
             }
             if let productioncompany = movie.production_companies {
                 productionCompaniesLabel.text = ""
@@ -226,7 +226,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 productionCompaniesLabel.text = ""
             }
             if let raiting = movie.vote_average {
-                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))".localized()
+                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))"
             }
             if let genres = movie.genres {
                 self.genres = genres

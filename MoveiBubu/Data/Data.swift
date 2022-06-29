@@ -16,6 +16,4 @@ class Task: Object {
     @Persisted var poster_path: String = ""
     @Persisted var vote_average: Double = 0
 
-
-
 }

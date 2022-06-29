@@ -31,7 +31,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
                     let okButton = UIAlertAction(title: "OK", style: .default) { action in
 
                         self.navigationController?.popViewController(animated: true)
-
+                        
                     }
 
                     alertVC.addAction(okButton)
@@ -39,8 +39,4 @@ class WebViewController: UIViewController, WKNavigationDelegate {
             self.present(alertVC, animated: true)
         }
     }
-    
-
-   
-
 }
