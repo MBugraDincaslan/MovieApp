@@ -17,54 +17,57 @@ class CastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterLabel: UILabel!
     
     func configureRecomm (movie: ListModel) {
+        
         characterLabel.isHidden = true
+        
         if let posterPath = movie.poster_path {
-
-                    if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-
-                        imageView.kf.setImage(with: imageURL)
-
-                    } else {
-
-                       imageView.image = nil
-
-                    }
-
-                } else {
-
-                    imageView.image = nil
-
-                }
+            
+            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
+                
+                imageView.kf.setImage(with: imageURL)
+                
+            } else {
+                
+                imageView.image = nil
+                
+            }
+            
+        } else {
+            
+            imageView.image = nil
+            
+        }
+        
         nameLabel.text = movie.title
+        
     }
-    func configure (casting: creditsModel){
-        /*let lastUrl = baseURL + "\(String(describing:movie.id))" + "/" + "\(String(describing: movie.poster_path))"
-        let url = URL(string: lastUrl)*/
+    
+    func configure (casting: creditsModel) {
+        
         if let posterPath = casting.profile_path{
-
-                    if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-
-                        imageView.kf.setImage(with: imageURL)
-
-                    } else {
-
-                        imageView.image = nil
-
-                    }
-
-                } else {
-
-                    imageView.image = nil
-
-                }
-       
-      
+            
+            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
+                
+                imageView.kf.setImage(with: imageURL)
+                
+            } else {
+                
+                imageView.image = nil
+                
+            }
+            
+        } else {
+            
+            imageView.image = nil
+            
+        }
+        
         nameLabel.text = casting.name
+        
         characterLabel.text = casting.character
         
-        
-      
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

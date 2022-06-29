@@ -11,6 +11,7 @@ protocol BigCastServicesProtocol {
 }
 
 struct BigCastServices: BigCastServicesProtocol {
+    
     static let shared = BigCastServices()
 
     private let network = Network()
@@ -20,7 +21,6 @@ struct BigCastServices: BigCastServicesProtocol {
         urlRequest.httpMethod = "GET"
         network.performRequest(request: urlRequest, completion: completion)
         
- 
     }
     
 }

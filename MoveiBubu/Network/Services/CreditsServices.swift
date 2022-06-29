@@ -11,6 +11,7 @@ protocol CreditsServicesProtocol {
 }
 
 struct CreditsServices: CreditsServicesProtocol {
+    
     static let shared = CreditsServices()
 
     private let network = Network()
@@ -20,7 +21,6 @@ struct CreditsServices: CreditsServicesProtocol {
         urlRequest.httpMethod = "GET"
         network.performRequest(request: urlRequest, completion: completion)
         
- 
     }
     
 }

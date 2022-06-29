@@ -8,6 +8,7 @@
 import UIKit
 
 class BigCastCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
@@ -18,26 +19,25 @@ class BigCastCollectionViewCell: UICollectionViewCell {
     private let baseImageURL = "https://api.themoviedb.org/3/person/"
    
     
-    func configure (bigcast: castModel){
-        /*let lastUrl = baseURL + "\(String(describing:movie.id))" + "/" + "\(String(describing: movie.poster_path))"
-        let url = URL(string: lastUrl)*/
+    func configure (bigcast: castModel) {
+        
         if let posterPath = bigcast.profile_path {
-
-                    if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-
-                        imageView.kf.setImage(with: imageURL)
-
-                    } else {
-
-                        imageView.image = nil
-
-                    }
-
-                } else {
-
-                    imageView.image = nil
-
-                }
+            
+            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
+                
+                imageView.kf.setImage(with: imageURL)
+                
+            } else {
+                
+                imageView.image = nil
+                
+            }
+            
+        } else {
+            
+            imageView.image = nil
+            
+        }
         
       
         nameLabel.text = bigcast.name
@@ -46,8 +46,6 @@ class BigCastCollectionViewCell: UICollectionViewCell {
         birthPlaceLabel.text = bigcast.place_of_birth
         biographyLabel.text = bigcast.biography
         
-        
-      
     }
     
     

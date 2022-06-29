@@ -12,6 +12,7 @@ protocol RecommendationServicesProtocol {
 }
 
 struct RecommendationServices: RecommendationServicesProtocol {
+    
     static let shared = RecommendationServices()
 
     private let network = Network()
@@ -21,7 +22,6 @@ struct RecommendationServices: RecommendationServicesProtocol {
         urlRequest.httpMethod = "GET"
         network.performRequest(request: urlRequest, completion: completion)
         
- 
     }
     
 }

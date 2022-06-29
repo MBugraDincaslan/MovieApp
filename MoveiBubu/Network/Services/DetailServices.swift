@@ -11,11 +11,11 @@ import Foundation
 
 protocol DetailServicesProtocol {
     func getDetail(movieid: Int,completion: @escaping (Result<DetailModel, NetworkError>) -> Void)
+    
 }
 
 struct DetailServices: DetailServicesProtocol {
-
-
+    
     private let network = Network()
     
     func getDetail (movieid: Int,completion: @escaping (Result<DetailModel, NetworkError>) -> Void) {
@@ -23,7 +23,6 @@ struct DetailServices: DetailServicesProtocol {
         urlRequest.httpMethod = "GET"
         network.performRequest(request: urlRequest, completion: completion)
         
- 
     }
     
 }

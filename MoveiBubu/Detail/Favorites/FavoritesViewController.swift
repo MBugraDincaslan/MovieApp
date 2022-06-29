@@ -24,12 +24,12 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
         
         super.viewDidLoad()
         
-       
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         lists = DataMngr.sharedData.arrayFavaorites()
         favoritesTableView.reloadData()
+        
     }
    
 
@@ -51,6 +51,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
             self.navigationController?.pushViewController(detailVC, animated: true)
             
         }
-    
+        
     }
+    
 }

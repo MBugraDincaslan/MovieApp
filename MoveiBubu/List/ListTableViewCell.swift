@@ -53,35 +53,27 @@ class ListTableViewCell: UITableViewCell {
         
         checkStatus(Status: true)
         
-        
-        
     }
-    /*func checkFavorites (check: Int) {
-        var list = DataMngr.sharedData.arrayFavaorites()
-        list.contains(check)
-        }
-    }*/
     
-    func configure (movie: ListModel){
-        /*let lastUrl = baseURL + "\(String(describing:movie.id))" + "/" + "\(String(describing: movie.poster_path))"
-        let url = URL(string: lastUrl)*/
+    func configure (movie: ListModel) {
+        
         if let backPath = movie.backdrop_path {
 
                     if let imageURL: URL = URL(string: "\(baseImageURL)\(backPath)") {
 
                         backRoundImage.kf.setImage(with: imageURL)
-
+                        
                     } else {
 
                         backRoundImage.image = nil
 
                     }
-
-                } else {
-
-                    backRoundImage.image = nil
-
-                }
+            
+        } else {
+            
+            backRoundImage.image = nil
+            
+        }
         if let posterPath = movie.poster_path {
 
                     if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
@@ -93,15 +85,16 @@ class ListTableViewCell: UITableViewCell {
                         movieImageView.image = nil
 
                     }
-
-                } else {
-
-                    movieImageView.image = nil
-
-                }
+            
+        } else {
+            
+            movieImageView.image = nil
+            
+        }
       
         movieNameLabel.text = movie.title
         releaseDateLabel.text = movie.release_date
+        
         if let rait = movie.vote_average {
             raitingLabel.text = "IMDB: \(String(rait))"
             
@@ -109,7 +102,7 @@ class ListTableViewCell: UITableViewCell {
         id = movie.id
         self.movie = movie
         checkStatus(Status: DataMngr.sharedData.checkFavorites(check: id))
-      
+        
     }
     
     
@@ -131,34 +124,16 @@ class ListTableViewCell: UITableViewCell {
            if let Id = id {
         let isFavorites = DataMngr.sharedData.UpdateFavorites(id: Id, title: movie.title ?? "", release_date: movie.release_date ?? "", poster_path: movie.poster_path ?? "", vote_average: movie.vote_average ?? 0)
               checkStatus(Status: isFavorites)
-            }
+               
+           }
            
        } else if let favorite = favorite {
            DataMngr.sharedData.DeleteFavorites(movie: favorite)
            checkStatus(Status: false)
+           
        }
-        
-        
-    }
-  /*  func backrounds (movie: ListModel) {
-        if let cellBackgroundView = movie.backdrop_path {
-            if let imageURL: URL = URL(string: "\(baseImageURL)\(cellBackgroundView)") {
-
-                cellBackgroundView.kf.(with: imageURL)
-            } else {
-
-                movieImageView.image = nil
-
-            }
-
-        } else {
-
-            movieImageView.image = nil
-
-        }
             
-         */
-    
+        }
     
 }
 

@@ -20,31 +20,34 @@ struct Network {
                 if let data = data {
                     
                     do {
+                        
                         let model = try JSONDecoder().decode(T.self, from: data)
+                        
                         completion(.success(model))
                         
+                    } catch {
                         
-                        
-                    }catch {
                         completion(.failure(.decodingError))
                     }
                     
                 } else if error != nil {
+                    
                     completion(.failure(.networkError))
                 } else {
+                    
                     completion(.failure(.unknowError))
                 }
                 
             }
             
-   
-           
-                
         }
+        
         task.resume()
+        
     }
     
 }
+
 enum NetworkError: Error {
     case decodingError
     case networkError

@@ -12,7 +12,6 @@ class BigCastViewController: UIViewController {
 
     @IBOutlet weak var castImageView: UIImageView!
     @IBOutlet weak var castStackView: UIStackView!
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birtdayLabel: UILabel!
     @IBOutlet weak var birthPlaceLabel: UILabel!
@@ -25,33 +24,32 @@ class BigCastViewController: UIViewController {
     private let baseImageURL = "https://image.tmdb.org/t/p/original"
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-     getBigCast()
+     
+        getBigCast()
+    
     }
     
-    func configure (){
-       
-        
-        
+    func configure() {
         
         if let character = cast {
+            
             if let posterPath = character.profile_path {
-
-                        if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-
-                            castImageView.kf.setImage(with: imageURL)
-
-                        } else {
-
-                            castImageView.image = nil
-
-                        }
-
-                    } else {
-
-                       castImageView.image = nil
-
-                    }
+                
+                if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
+                    
+                    castImageView.kf.setImage(with: imageURL)
+                    
+                } else {
+                    castImageView.image = nil
+                    
+                }
+                
+            } else {
+                castImageView.image = nil
+                
+            }
             if let name = character.name {
                 nameLabel.text = "NAME: \(String(name))"
             }
@@ -69,30 +67,38 @@ class BigCastViewController: UIViewController {
             }
             if let biograpy = character.biography {
                 biographyLabel.text = "BIOGRAPY: \(String(biograpy))"
+                
             }
+            
         }
+        
     }
     
     func getBigCast() {
+        
         if let castid = id {
             BigCastServices.shared.getBigCast(personid: castid) {
+                
                 result in
+                
                 switch result {
-
-                        case .success(let response):
+                
+                case .success(let response):
+                    
                     self.cast = response
+                    
                     self.configure()
-                            
-
-                        case .failure(let error):
-
-                            print(error)
-
-                        }
-
-                    }
+                
+                case .failure(let error):
+                    
+                    print(error)
+                    
+                }
+                
+            }
+            
         }
+        
     }
     
-
 }

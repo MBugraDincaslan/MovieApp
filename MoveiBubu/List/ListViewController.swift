@@ -12,16 +12,20 @@ class ListViewController: UIViewController {
     @IBOutlet weak var ListTableView: UITableView! {
         
         didSet {
+            
             ListTableView.dataSource = self
             ListTableView.delegate = self
             ListTableView.register(UINib(nibName: String(describing: ListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ListTableViewCell.self))
+            
         }
+        
     }
     
     private let listServices: ListServicesProtocol = ListServices()
     private var lists: [ListModel] = []
     private var updateLists: [ListModel] = []
     var page: Int = 1
+    
     
     func getMovie(pageNumber: Int) {
         listServices.getAllList(page: pageNumber) { result in
@@ -32,9 +36,11 @@ class ListViewController: UIViewController {
                 print(self.lists)
             case .failure(let error):
                 print(error)
+                
             }
+            
         }
-    
+        
     }
     func updateList(pageNumber: Int) {
         listServices.getAllList(page: pageNumber) { result in
@@ -44,9 +50,11 @@ class ListViewController: UIViewController {
                 print(self.updateLists)
             case .failure(let error):
                 print(error)
+                
             }
+            
         }
-    
+        
     }
         
     
@@ -57,16 +65,15 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         getMovie(pageNumber: page)
         
-        
-        // Do any additional setup after loading the view.
     }
     
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ListTableView.reloadData()
+        
     }
-
+    
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -107,10 +114,12 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
                 self.ListTableView.reloadData()
                 
             }
+            
         } else {
             //activity indicator stopped
+            
         }
+        
     }
     
-   
 }
