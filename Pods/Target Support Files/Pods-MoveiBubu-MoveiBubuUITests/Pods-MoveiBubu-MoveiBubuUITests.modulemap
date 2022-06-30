@@ -1,0 +1,6 @@
+framework module Pods_MoveiBubu_MoveiBubuUITests {
+  umbrella header "Pods-MoveiBubu-MoveiBubuUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
