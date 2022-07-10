@@ -8,7 +8,7 @@
 import UIKit
 
 
-class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
+class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate {
      
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTableView: UITableView! {
@@ -30,6 +30,8 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
         super.viewDidLoad()
         searchBar.delegate = self
     }
+    
+    
    //MARK: - tableview configure
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,11 +75,25 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     }
    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.getSearch(text: searchText)
             
+            if !self.searchResults.isEmpty {
+                self.searchListTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            }
         }
         
     }
-    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    isEditing = false //Local variable used to manipulate your cells
+        self.searchListTableView.reloadData()
+    }
+   
+
+/*override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    searchListTableView.reloadData()
+    }*/
+   
+
 }
