@@ -32,30 +32,23 @@ class BigCastViewController: UIViewController {
     }
     
     func configure() {
-        
         if let character = cast {
-            
             if let posterPath = character.profile_path {
-                
                 if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                    
                     castImageView.kf.setImage(with: imageURL)
-                    
-                } else {
+                    } else {
                     castImageView.image = nil
-                    
-                }
+                    }
                 
             } else {
                 castImageView.image = nil
-                
             }
             if let name = character.name {
                 nameLabel.text = "NAME: \(String(name))"
             } else {
                 nameLabel.text = nil
+                
             }
-            
             if let birtday = character.birthday {
                 birtdayLabel.text = "BIRTHDAY: \(String(birtday))"
             } else {
@@ -82,30 +75,17 @@ class BigCastViewController: UIViewController {
     }
     
     func getBigCast() {
-        
         if let castid = id {
             BigCastServices.shared.getBigCast(personid: castid) {
-                
                 result in
-                
                 switch result {
-                
                 case .success(let response):
-                    
                     self.cast = response
-                    
                     self.configure()
-                
                 case .failure(let error):
-                    
                     print(error)
-                    
+                    }
                 }
-                
             }
-            
         }
-        
-    }
-    
 }

@@ -17,60 +17,46 @@ class CastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterLabel: UILabel!
     
     func configureRecomm (movie: ListModel) {
-        
         characterLabel.isHidden = true
-        
         if let posterPath = movie.poster_path {
-            
             if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                
                 imageView.kf.setImage(with: imageURL)
-                
-            } else {
-                
+                } else {
                 imageView.image = nil
-                
-            }
-            
-        } else {
-            
+                }
+            } else {
             imageView.image = nil
-            
         }
-        
-        nameLabel.text = movie.title
+        if let name = movie.title {
+            nameLabel.text = name
+        } else {
+            nameLabel.text = nil
+        }
         
     }
     
     func configure (casting: creditsModel) {
-        
         if let posterPath = casting.profile_path{
-            
             if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                
                 imageView.kf.setImage(with: imageURL)
-                
-            } else {
-                
+                } else {
                 imageView.image = nil
-                
-            }
-            
-        } else {
-            
+                }
+            } else {
             imageView.image = nil
-            
+        }
+        if let name = casting.name {
+            nameLabel.text = name
+        } else {
+            nameLabel.text = nil
+        }
+        if let character = casting.character {
+            characterLabel.text = character
+        } else {
+            characterLabel.text = nil
         }
         
-        nameLabel.text = casting.name
-        
-        characterLabel.text = casting.character
         
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
 }

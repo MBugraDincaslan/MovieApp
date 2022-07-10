@@ -14,33 +14,23 @@ struct Network {
     func performRequest<T: Codable>(request: URLRequest, completion: @escaping (Result<T, NetworkError>) -> Void) {
         
         let task = session.dataTask(with: request) { data, response, error in
-            
             DispatchQueue.main.async {
-                
                 if let data = data {
-                    
                     do {
-                        
                         let model = try JSONDecoder().decode(T.self, from: data)
-                        
                         completion(.success(model))
-                        
-                    } catch {
-                        
+                        } catch {
                         completion(.failure(.decodingError))
-                    }
-                    
-                } else if error != nil {
-                    
+                        }
+                    } else if error != nil {
                     completion(.failure(.networkError))
-                } else {
-                    
+                        
+                    } else {
                     completion(.failure(.unknowError))
+                        
+                    }
                 }
-                
             }
-            
-        }
         
         task.resume()
         
