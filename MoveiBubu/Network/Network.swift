@@ -11,7 +11,7 @@ struct Network {
     
     private let session = URLSession.shared
     
-    func performRequest<T: Codable>(request:URLRequest, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    func performRequest<T: Codable>(request: URLRequest, completion: @escaping (Result<T, NetworkError>) -> Void) {
         
         let task = session.dataTask(with: request) { data, response, error in
             
@@ -47,6 +47,7 @@ struct Network {
     }
     
 }
+
 
 enum NetworkError: Error {
     case decodingError

@@ -20,11 +20,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
             favoritesTableView.register(UINib(nibName: String(describing: ListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ListTableViewCell.self))
         }
     }
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-    }
+  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         lists = DataMngr.sharedData.arrayFavaorites()

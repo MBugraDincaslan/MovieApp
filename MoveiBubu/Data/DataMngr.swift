@@ -12,7 +12,7 @@ import RealmSwift
 struct DataMngr {
     
     static let sharedData = DataMngr()
-    
+    //optinal
     private var realm: Realm {
         do {
             let realm = try Realm()
@@ -20,9 +20,10 @@ struct DataMngr {
             
         } catch {
             print("Error initalising new realm, \(error)")
-            
+            //return
         }
         return self.realm
+        //sonsuz döngü
         
     }
     func UpdateFavorites(id: Int, title: String = "", release_date: String = "", poster_path: String = "", vote_average: Double = 0) -> Bool {

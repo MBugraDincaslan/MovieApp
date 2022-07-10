@@ -11,16 +11,12 @@ import UIKit
 class ListViewController: UIViewController {
 
     @IBOutlet weak var ListTableView: UITableView! {
-        
         didSet {
-            
             ListTableView.dataSource = self
             ListTableView.delegate = self
             ListTableView.register(UINib(nibName: String(describing: ListTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: ListTableViewCell.self))
-            
+            }
         }
-        
-    }
     
     private let listServices: ListServicesProtocol = ListServices()
     private var lists: [ListModel] = []
@@ -37,44 +33,43 @@ class ListViewController: UIViewController {
                 print(self.lists)
             case .failure(let error):
                 print(error)
-                
+                }
             }
-            
         }
-        
-    }
     func updateList(pageNumber: Int) {
         listServices.getAllList(page: pageNumber) { result in
             switch result {
             case .success(let response):
                 self.updateLists = response.results ?? []
+                //self.ListTableView.reloadData()
+               /* {
+                   self.lists.append(contentsOf: self.updateLists)
+                   self.page += 1
+                   self.ListTableView.reloadData()
+                 */
+                //DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                   // self.lists.append(contentsOf: self.updateLists)
+                    //self.page += 1
+                    //self.ListTableView.reloadData()
+                    
                 print(self.updateLists)
             case .failure(let error):
                 print(error)
-                
+                }
             }
-            
         }
         
-    }
-        
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         getMovie(pageNumber: page)
         
-    }
+}
     
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ListTableView.reloadData()
-        
-    }
-    
+        }
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -93,11 +88,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {
             detailVC.id = lists[indexPath.row].id
             self.navigationController?.pushViewController(detailVC, animated: true)
-            
-        }
-    
+            }
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+     //kontrol aşağı scroll
         if indexPath.row == lists.count - 1 {
             loadMore(status: true)
         } else {
@@ -108,19 +102,16 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         if status {
             //activity indicator start
             updateList(pageNumber: page + 1)
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+           DispatchQueue.main.asyncAfter(deadline: .now()){
                 self.lists.append(contentsOf: self.updateLists)
                 self.page += 1
                 self.ListTableView.reloadData()
-                
-            }
+                }
             
         } else {
             //activity indicator stopped
-            
+            }
         }
-        
-    }
-    
-}
+        }
+
+

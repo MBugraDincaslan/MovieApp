@@ -10,7 +10,7 @@ import Kingfisher
 
 class CastCollectionViewCell: UICollectionViewCell {
     
-    private let baseImageURL = "https://image.tmdb.org/t/p/original"
+    private let baseImageURL = "https://image.tmdb.org/t/p/w500"
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

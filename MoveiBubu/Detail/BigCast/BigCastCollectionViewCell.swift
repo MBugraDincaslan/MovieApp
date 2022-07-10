@@ -38,20 +38,35 @@ class BigCastCollectionViewCell: UICollectionViewCell {
             imageView.image = nil
             
         }
+        if let name = bigcast.name {
+            nameLabel.text = name
+        } else {
+            nameLabel.text = nil
+        }
+        if let birthday = bigcast.birthday {
+            birthdayLabel.text = birthday
+        } else {
+            birthdayLabel.text = nil
+        }
+        if let deathday = bigcast.deathday {
+            deathdayLabel.text = deathday
+        } else {
+            deathdayLabel.text = nil
+        }
+        if let birthPlace = bigcast.place_of_birth {
+            birthPlaceLabel.text = birthPlace
+        } else {
+            birthPlaceLabel.text = nil
+        }
+        if let biography = bigcast.biography {
+            biographyLabel.text = biography
+        } else {
+            biographyLabel.text = nil
+        }
         
-      
-        nameLabel.text = bigcast.name
-        birthdayLabel.text = bigcast.birthday
-        deathdayLabel.text = bigcast.deathday
-        birthPlaceLabel.text = bigcast.place_of_birth
-        biographyLabel.text = bigcast.biography
         
     }
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+   
 }

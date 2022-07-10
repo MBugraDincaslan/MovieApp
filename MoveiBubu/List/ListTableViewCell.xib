@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="368" height="152"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f4t-Cs-ACM" userLabel="Background Image View">
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f4t-Cs-ACM" userLabel="Background Image View">
                         <rect key="frame" x="0.0" y="0.0" width="368" height="152"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SzM-ce-tal" userLabel="Movie Image View">

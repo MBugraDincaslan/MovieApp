@@ -502,7 +502,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DOz-Si-b8O">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="linkColor"/>
                     </navigationBar>
                     <connections>
                         <segue destination="q4r-OK-Tev" kind="relationship" relationship="rootViewController" id="r2M-qB-fzE"/>
@@ -587,6 +587,9 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

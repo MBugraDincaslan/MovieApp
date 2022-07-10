@@ -12,7 +12,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
      
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchListTableView: UITableView! {
-        
         didSet {
             searchListTableView.dataSource = self
             searchListTableView.delegate = self
@@ -29,7 +28,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         searchBar.delegate = self
     }
    //MARK: - tableview configure
@@ -61,13 +59,10 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
 
     func getSearch(text: String){
         listServices.getSearch(moon: text) { result in
-            
             switch result {
-            
             case .success(let response):
                 self.searchResults = response.results ?? []
                 self.searchListTableView.reloadData()
-            
             case .failure(let error):
                 print(error)
                 
@@ -78,9 +73,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDe
     }
    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            
             self.getSearch(text: searchText)
             
         }

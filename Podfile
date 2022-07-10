@@ -15,6 +15,5 @@ target 'MoveiBubu' do
   target 'MoveiBubuUITests' do
     # Pods for testing
   end
-pod "SkeletonView"
-end
 
+end

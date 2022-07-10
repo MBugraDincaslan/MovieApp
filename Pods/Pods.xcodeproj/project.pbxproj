@@ -7,97 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		052FBB9363B1BC1FDB349E3F3CEE69C6 /* SkeletonTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BCE62AAF862EF117401A2C4C3AB76 /* SkeletonTextNode.swift */; };
-		0AD12B0895E23C85CFB097DA52ECE2F7 /* UIView+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7238CF6B425C9B7A5E520F1B2BA973F8 /* UIView+Transitions.swift */; };
-		0D5539D20DA378F111851D431717BE6F /* Notification+SkeletonFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DE8EE2D2F050B0C7798B589E748EBA /* Notification+SkeletonFlow.swift */; };
-		0DF0A5F45C9A1CEF0AB0A18DF870419C /* SkeletonView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 399A5605D302355675609B128AB9543E /* SkeletonView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E7E2449066EB2DFE86D1E98F169FB40 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D865F2EA0A3A6C00402015F8CB2722 /* SkeletonView.swift */; };
-		182DB8FC7B75CEAFFC80B8DCF2DDAE2A /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE24659F592F4B4D820C189A842A595 /* CALayer+Extensions.swift */; };
-		1A99582B47723D7282959E2FEF44CCA3 /* UITableView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BA6A434D0923E25B54D453572C6B60 /* UITableView+CollectionSkeleton.swift */; };
-		1D735C25C4B9D9687CBD5B7A82C5BB9B /* UITextView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979A59FD7D3299E6C241FCCB1812F2D1 /* UITextView+IBInspectable.swift */; };
-		24C3AE66D67FE633CC0864FD7A805880 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3DC6EFAD9954CDFCF7C019AABB0D2 /* Deprecated.swift */; };
-		255B8039A5422D5487B7E090A69D6686 /* RecoverableViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6B7C93D98156767A3708EAB2E9354 /* RecoverableViewState.swift */; };
-		28011A04F91E9E351EB87E0D4355E7CE /* SkeletonTextNumberOfLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E4ED1C28850EAAEA6D64C9EDD12BD7 /* SkeletonTextNumberOfLines.swift */; };
-		28C475EE48BC8C9C1AA9DE48A2F4D01C /* SkeletonAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433F2A18F9888C494AE3E903CC431911 /* SkeletonAppearance.swift */; };
-		2A91AFF759771F30762A499683402981 /* UITextView+SKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DB2E5EAE598B150A1E2A9739994811 /* UITextView+SKExtensions.swift */; };
-		2F76E04866F9F4E4D9B17F90E94A969C /* SkeletonTableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F5123209B163A4586D0F178376B6B /* SkeletonTableViewProtocols.swift */; };
-		37B83B2C1AA6CCF24D088098B46AA7E1 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204DB024D4E0D43B2139023ABE0C511 /* UIView+IBInspectable.swift */; };
-		39165C2314870B5E84EF4D7900D8C068 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA48E208793EEC942BF35D2E038D7CD /* GradientDirection.swift */; };
-		3C3800BE1CF1710DFF4DB6F1E0DA44F8 /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EB0D1D8FDB5CF78466B9C6F521B781 /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DC80AFB3A1C2F7D6B86B4CCA77DEEA0 /* UIColor+Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC8D16FBC5C112220F016EE0B09897 /* UIColor+Skeleton.swift */; };
-		3FAECBFCB37AAFB5BDDA10AB0B81B1E9 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F072EE6DC99CF4FC5403BE3F5BB6C55 /* Notification+Extensions.swift */; };
-		44D186EDEAE3B83A52108DC4B8CBDD8E /* SkeletonMultilinesLayerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA8F8A604C245A783DC3CA6AF2862C /* SkeletonMultilinesLayerConfig.swift */; };
-		4573B8B1B1787D61DBAB8686F58000AA /* UILabel+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F497BCE5CE17BF3AD74D966A7DA039 /* UILabel+IBInspectable.swift */; };
-		487DCA22638C799DA246A224DC2B66DF /* Recursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FE2B5B060F8CE2832A5221AF639A7 /* Recursive.swift */; };
-		4A4330036BF48FADC8689371C657F1D7 /* Recoverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ABC5917384A0A3618A4AB3B677CE0 /* Recoverable.swift */; };
-		4B5B7F4937945D28D8CAE2BD46622873 /* UIView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F67D69FED1EACF9C6F553580B7E9E /* UIView+CollectionSkeleton.swift */; };
-		4B810DCCDEC4D31F78EA6AD2AF3F9EEF /* SkeletonTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC71690AC04A6C0EC9A23D55BF4017 /* SkeletonTransitionStyle.swift */; };
-		4DEA179D81118F2F2FD967142986897D /* SkeletonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF2C32D90590A2970EF0143CD45F53 /* SkeletonLayer.swift */; };
-		5186FA9FA0244EBEB68A20D465624863 /* PrepareViewForSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144E64D95A6DD19729E74E72A9D38EF1 /* PrepareViewForSkeleton.swift */; };
-		578D4EE7467AA9C2451989153BBCC911 /* UIView+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9CA7CB0476939BDC356B11B75BEF51 /* UIView+Swizzling.swift */; };
-		5BC7985CFEF8890CCF0653CC9E69024A /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3AEEB8CB3376AC68F63771F6E6D2BE /* UITableView+Extensions.swift */; };
-		685A0A7F0130E280E9684E485D03A62E /* SubviewsSkeletonables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA219B4E9A0BCE968188299D92E6BC /* SubviewsSkeletonables.swift */; };
-		6D5A43E0CEC1546339105DB3465B5264 /* SkeletonExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13C9491C9B283AA1A0C80F9B0A7E8E5 /* SkeletonExtended.swift */; };
-		6F2D6CFF26B932F73F5DBD0536EADA88 /* Pods-MoveiBubu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B0A9B29BFD14AE1A0DDCE165EB1A51 /* Pods-MoveiBubu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71E0314B48058EB95C1DD025D013EF98 /* UILabel+SKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC82B89461D2C71C92188B093EB1437 /* UILabel+SKExtensions.swift */; };
-		725323D4A321DBF980E97603D961CDE1 /* SkeletonTextLineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291269C0DEC0A94D5B7684CAB8B47FB4 /* SkeletonTextLineHeight.swift */; };
-		79B45DC5D9CDB522C5316E79A97E64A2 /* SkeletonLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C418551FE9F5924B46AE81114E65AB7 /* SkeletonLayerBuilder.swift */; };
-		7AAC9A8FA6E3BEFDCAD561EBECA4104D /* UIView+AssociatedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E9DF5C1CE398D3D50007BEA45CDFE4 /* UIView+AssociatedObjects.swift */; };
-		7BDCD44C8886591445A7DFEF6915B0BA /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CDA74C9DB9A8A599E115A00C4DE481 /* UICollectionView+Extensions.swift */; };
-		7DCDF7BEE7C5BF26E51EA0E659513D5F /* UICollectionView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9E57E348AC15BBF49611798EE1307F /* UICollectionView+CollectionSkeleton.swift */; };
-		85E2C79FB06E72B588D40E999266F712 /* GradientDirection+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9711C2187AE7BBC507A1B7793109A7B /* GradientDirection+Animations.swift */; };
-		89C36D86454EF394CC8D9AAEDAF4E908 /* CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19966802DD56F105E896D87247928A6D /* CollectionSkeleton.swift */; };
-		8AFEC3FDFB1AA2EEE863E30034C5D247 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E553BB61C67F0870531DD31AC075D /* Int+Extensions.swift */; };
-		9CDC9B0864C8CD85FFE0C44B3A954762 /* Pods-MoveiBubuTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E032EDDDD6FEA5B6DEB3BDD8A96E38CE /* Pods-MoveiBubuTests-dummy.m */; };
-		9E873CCC232F678B41009471A95D181D /* SkeletonTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4318402BEAECC5A481DF35BF7B5F3A /* SkeletonTreeNode.swift */; };
-		9EDB6E03CFF61D59CD4F02849D3300AF /* SkeletonCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EA6C79C2D5A622E86B6CA2E0CDAFC /* SkeletonCollectionDataSource.swift */; };
-		A60DACE9E8ADAF150C2F770FC5887AE4 /* Pods-MoveiBubu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7567D6DF44EAE3126D6E1A2099A9945 /* Pods-MoveiBubu-dummy.m */; };
-		AC54B01E3C8B9A23FD819B06072642A5 /* Pods-MoveiBubuTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 110DDB0DA2D1B2A7A70AD68401E411B0 /* Pods-MoveiBubuTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE54A6FAD49B5524E11AC0BD7BB5BEC2 /* SkeletonGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F688C426E00D7C2DEC70B58FA53A /* SkeletonGradient.swift */; };
-		B3B3B2A2CA9E063CF7C8FBBC35B48FE2 /* SkeletonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EEB70AE4D03583F96FC4AE58360F1 /* SkeletonConfig.swift */; };
-		B4E99222AAF4045AEE9711E701EFC2C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7680EC7C521C163F22E15DBC19407B8B /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1112F98E94886B90BBC19F97BD91DE /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCF53187ADBCB8D911BA9448ACEADFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9CDC9B0864C8CD85FFE0C44B3A954762 /* Pods-MoveiBubuTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CB86A34CD4E7CDCF7AA210451AAC0B /* Pods-MoveiBubuTests-dummy.m */; };
+		AC54B01E3C8B9A23FD819B06072642A5 /* Pods-MoveiBubuTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D1BDAE5C78B5AF7F41E14BB5E2C2D9 /* Pods-MoveiBubuTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B35B10B930693EF6963F6723FDD81EA0 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11BF1AC11959E35176A519928412C8 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m */; };
 		B83594F4F7F6247E761DCCBBCC94BB5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B91996622DF193F86DF5349242B65507 /* SkeletonView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EF8FA27A58CB71AB224E0D3F5BF14 /* SkeletonView-dummy.m */; };
-		BADA389CB08477C54ACF694B31549F10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BB1829EF9AC1A7C0EE68BFFE2D6DEB8D /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC82B4D1961D2E4615BE398EFCE31E /* AssociationPolicy.swift */; };
-		BBBACA6DA26767A67F50183DFE072A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BD3663D9F8B999A949ADBBB3BFA8F2CD /* SkeletonFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE454C63D3C9E46C07A13AD2E7161A /* SkeletonFlowHandler.swift */; };
-		C3A7962ECF086AF37895D11C63EAD40D /* UIView+AppLifecycleNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED698562D42012F0696767A719222E5 /* UIView+AppLifecycleNotifications.swift */; };
-		C74C07031ACD244428C0B4AB8B91986D /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D72E97903AB9BD29E8D0F08E0B3E499 /* UILabel+Extensions.swift */; };
-		C9B57C6951420E3C0F6420B6C13284E9 /* SkeletonMultilineLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8DDE60D87C84195DDF66CE470AB0B /* SkeletonMultilineLayerBuilder.swift */; };
-		D0129BE19086C6A77A52DF92151A0CA2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581CB65A610EF0EF600DDF8932FEF26 /* UIView+Extensions.swift */; };
-		D38C419E4D46A900BEB4124D0CAFA6E7 /* UIView+SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E97DFAD51D813BB23859A33D891518F /* UIView+SkeletonView.swift */; };
-		D703952D56064AE264D736910DC80D7B /* SkeletonAnimationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06357CD372CD4A1D2A45C4801941DC14 /* SkeletonAnimationBuilder.swift */; };
-		D9120F6113E93C120DDA31F0CFA8E394 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D4BFCA2DF3083495B2853F734CBB5 /* Swizzling.swift */; };
-		DE68D2A88D305EBF758713D3C4F66F96 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B41304B00D1623C73075C21AE55DA1 /* DispatchQueue+Extensions.swift */; };
-		E2A74A5897683ABC8A2E081B7B8BE17C /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE15EFDFE465D989A864A79828841955 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m */; };
-		E80F6AD40556AA586E6CD4F2AD5DDBD3 /* SkeletonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48FCA4A04164B96556C7CE90B53051 /* SkeletonType.swift */; };
-		EAD128E781A9681A0FBDDBEEADD22B89 /* SkeletonCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5168F0752D9847EAB00F65C26B40BDFE /* SkeletonCollectionDelegate.swift */; };
-		EBE33106D2F992A6371EF38E67FCB45C /* CALayer+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394427DF60B3BA952AD43C3052B5F5D9 /* CALayer+Animations.swift */; };
-		EFAC89938AB4509807BF9CFBF16FA0CE /* UIView+SKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E4588F37E9077B7C67F0C41458103 /* UIView+SKExtensions.swift */; };
-		EFE255576A3DF0CDE10858E3B2D7EFE3 /* SkeletonReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E360F84FD2F985C94905785C42440C /* SkeletonReusableCell.swift */; };
-		F012180366FC9F017E5237B64607D75B /* ProcessInfo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DC2723285BC06FB6228F3F563BB4A /* ProcessInfo+Extensions.swift */; };
-		F58A6AC2EEE98442E0A282EDAE7D5099 /* SkeletonCollectionViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7907B16FBD735DEAC7CF7B64BB78732E /* SkeletonCollectionViewProtocols.swift */; };
-		F7B1C1329581FCC09F54B77788F94A85 /* SkeletonDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E47FF402BBD21BD7103D21FEAC5F3 /* SkeletonDebug.swift */; };
-		F851C212FE2C9EFE8CA109D27E5CA7B0 /* SkeletonTreeNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CEE0491030633A1A688C3FBFD7C037 /* SkeletonTreeNode+Extensions.swift */; };
+		C46C9B4BD839DEFD18DEE1CD8DC730CC /* Pods-MoveiBubu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5BD24AE0C45748BA85A6B639D453B /* Pods-MoveiBubu-dummy.m */; };
+		CCD1DC1C7BB9FE75857961E49D295FA3 /* Pods-MoveiBubu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED020DDEEE8334C86E6D62F58065878 /* Pods-MoveiBubu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6D73CB795C1D24B529228D84131C1ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0281B8BDD318D3D087C42D52961A45E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CEEFD1CB630CA790F0396E2E24A4C8C;
-			remoteInfo = SkeletonView;
-		};
-		42267F2B7AB716B1C4F7EF6578A61E23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CEEFD1CB630CA790F0396E2E24A4C8C;
-			remoteInfo = SkeletonView;
-		};
-		CB4FADB7BD0080977603A3D2BBF64AC7 /* PBXContainerItemProxy */ = {
+		1C8F7408AF760CFD6FDA49B49ABE0210 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -107,130 +29,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A207A6CA65FA815BBD0D84A21AA89E /* Pods-MoveiBubuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		01BA6A434D0923E25B54D453572C6B60 /* UITableView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+CollectionSkeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UITableView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
-		0367873F6AA1C2865053B8535D18867E /* Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0581CB65A610EF0EF600DDF8932FEF26 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
-		05DE8EE2D2F050B0C7798B589E748EBA /* Notification+SkeletonFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Notification+SkeletonFlow.swift"; path = "SkeletonViewCore/Sources/API/FoundationExtensions/Notification+SkeletonFlow.swift"; sourceTree = "<group>"; };
-		06357CD372CD4A1D2A45C4801941DC14 /* SkeletonAnimationBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonAnimationBuilder.swift; path = SkeletonViewCore/Sources/API/AnimationBuilder/SkeletonAnimationBuilder.swift; sourceTree = "<group>"; };
-		0ECA8F8A604C245A783DC3CA6AF2862C /* SkeletonMultilinesLayerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonMultilinesLayerConfig.swift; path = SkeletonViewCore/Sources/Internal/SkeletonConfigs/SkeletonMultilinesLayerConfig.swift; sourceTree = "<group>"; };
-		0EE24659F592F4B4D820C189A842A595 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/CALayer+Extensions.swift"; sourceTree = "<group>"; };
-		0F072EE6DC99CF4FC5403BE3F5BB6C55 /* Notification+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Notification+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/FoundationExtensions/Notification+Extensions.swift"; sourceTree = "<group>"; };
-		110DDB0DA2D1B2A7A70AD68401E411B0 /* Pods-MoveiBubuTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoveiBubuTests-umbrella.h"; sourceTree = "<group>"; };
-		144E64D95A6DD19729E74E72A9D38EF1 /* PrepareViewForSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrepareViewForSkeleton.swift; path = SkeletonViewCore/Sources/Internal/SkeletonExtensions/PrepareViewForSkeleton.swift; sourceTree = "<group>"; };
-		159D1C500F6BAFF3936461202F943CA8 /* Pods-MoveiBubu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu.debug.xcconfig"; sourceTree = "<group>"; };
-		175BCE62AAF862EF117401A2C4C3AB76 /* SkeletonTextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTextNode.swift; path = SkeletonViewCore/Sources/Internal/SkeletonExtensions/SkeletonTextNode.swift; sourceTree = "<group>"; };
-		19966802DD56F105E896D87247928A6D /* CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionSkeleton.swift; path = SkeletonViewCore/Sources/Internal/Collections/CollectionSkeleton.swift; sourceTree = "<group>"; };
-		1E97DFAD51D813BB23859A33D891518F /* UIView+SkeletonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SkeletonView.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+SkeletonView.swift"; sourceTree = "<group>"; };
-		26E4ED1C28850EAAEA6D64C9EDD12BD7 /* SkeletonTextNumberOfLines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTextNumberOfLines.swift; path = SkeletonViewCore/Sources/API/Models/SkeletonTextNumberOfLines.swift; sourceTree = "<group>"; };
-		291269C0DEC0A94D5B7684CAB8B47FB4 /* SkeletonTextLineHeight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTextLineHeight.swift; path = SkeletonViewCore/Sources/API/Models/SkeletonTextLineHeight.swift; sourceTree = "<group>"; };
-		2B9C8DFC8C584D26FE392A2F57481312 /* Pods-MoveiBubu-MoveiBubuUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoveiBubu-MoveiBubuUITests-frameworks.sh"; sourceTree = "<group>"; };
-		343E553BB61C67F0870531DD31AC075D /* Int+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/FoundationExtensions/Int+Extensions.swift"; sourceTree = "<group>"; };
+		03D1BDAE5C78B5AF7F41E14BB5E2C2D9 /* Pods-MoveiBubuTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoveiBubuTests-umbrella.h"; sourceTree = "<group>"; };
+		1293DB2EF3D6051EC4B7B98D407A970F /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B2049C9000CB61CA41E62D1EB1EC53F /* Pods-MoveiBubuTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MoveiBubuTests.modulemap"; sourceTree = "<group>"; };
+		2E9E9AD983B874078CBBB73FAB744091 /* Pods-MoveiBubu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-acknowledgements.plist"; sourceTree = "<group>"; };
 		3572E7A7F4EE989143706C50531C5316 /* Pods-MoveiBubuTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MoveiBubuTests"; path = Pods_MoveiBubuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		394427DF60B3BA952AD43C3052B5F5D9 /* CALayer+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Animations.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/CALayer+Animations.swift"; sourceTree = "<group>"; };
-		399A5605D302355675609B128AB9543E /* SkeletonView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkeletonView-umbrella.h"; sourceTree = "<group>"; };
-		3F0EEB70AE4D03583F96FC4AE58360F1 /* SkeletonConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonConfig.swift; path = SkeletonViewCore/Sources/Internal/SkeletonConfigs/SkeletonConfig.swift; sourceTree = "<group>"; };
-		40AC71690AC04A6C0EC9A23D55BF4017 /* SkeletonTransitionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTransitionStyle.swift; path = SkeletonViewCore/Sources/API/Models/SkeletonTransitionStyle.swift; sourceTree = "<group>"; };
-		40F648AC7FD5E4119DF7D042C88157A6 /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		41E997EC49FC02C99794E97E5CA329B7 /* Pods-MoveiBubu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-Info.plist"; sourceTree = "<group>"; };
-		433F2A18F9888C494AE3E903CC431911 /* SkeletonAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonAppearance.swift; path = SkeletonViewCore/Sources/API/Appearance/SkeletonAppearance.swift; sourceTree = "<group>"; };
-		43E360F84FD2F985C94905785C42440C /* SkeletonReusableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonReusableCell.swift; path = SkeletonViewCore/Sources/Internal/Collections/SkeletonReusableCell.swift; sourceTree = "<group>"; };
-		44DB9F995B0BC15D5062F93A532FA803 /* Pods-MoveiBubuTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoveiBubuTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E8E4588F37E9077B7C67F0C41458103 /* UIView+SKExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SKExtensions.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UIView+SKExtensions.swift"; sourceTree = "<group>"; };
-		4EBF1777EE67E784E123441E594BEBC8 /* SkeletonView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkeletonView-prefix.pch"; sourceTree = "<group>"; };
-		5168F0752D9847EAB00F65C26B40BDFE /* SkeletonCollectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionDelegate.swift; path = SkeletonViewCore/Sources/Internal/Collections/SkeletonCollectionDelegate.swift; sourceTree = "<group>"; };
-		52FC82B4D1961D2E4615BE398EFCE31E /* AssociationPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationPolicy.swift; path = SkeletonViewCore/Sources/Internal/Helpers/AssociationPolicy.swift; sourceTree = "<group>"; };
-		54BFCD13488070EF4F1A9B47D3C3AFD6 /* Pods-MoveiBubu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-acknowledgements.plist"; sourceTree = "<group>"; };
-		583B8CEFAA6F3D5C0CD03A79E4979A46 /* Pods-MoveiBubu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu.release.xcconfig"; sourceTree = "<group>"; };
-		65BA219B4E9A0BCE968188299D92E6BC /* SubviewsSkeletonables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubviewsSkeletonables.swift; path = SkeletonViewCore/Sources/Internal/SkeletonExtensions/SubviewsSkeletonables.swift; sourceTree = "<group>"; };
-		67B0F688C426E00D7C2DEC70B58FA53A /* SkeletonGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonGradient.swift; path = SkeletonViewCore/Sources/API/Models/SkeletonGradient.swift; sourceTree = "<group>"; };
-		6BFC8D16FBC5C112220F016EE0B09897 /* UIColor+Skeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Skeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIColor+Skeleton.swift"; sourceTree = "<group>"; };
-		6F2FE2B5B060F8CE2832A5221AF639A7 /* Recursive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recursive.swift; path = SkeletonViewCore/Sources/Internal/Helpers/Recursive.swift; sourceTree = "<group>"; };
-		7204DB024D4E0D43B2139023ABE0C511 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IBInspectable.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UIView+IBInspectable.swift"; sourceTree = "<group>"; };
-		7238CF6B425C9B7A5E520F1B2BA973F8 /* UIView+Transitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Transitions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+Transitions.swift"; sourceTree = "<group>"; };
+		36D660F625B888703F9E974657EB5492 /* Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37A1B4760B06FF9D2F00A81A0B2D2DF1 /* Pods-MoveiBubu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu.release.xcconfig"; sourceTree = "<group>"; };
+		3A36AEE65FB98DA40C8FE7876CD8A78B /* Pods-MoveiBubu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-Info.plist"; sourceTree = "<group>"; };
+		3A3A9FE92DE4DC09F9DA4888748DDFAA /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3ED5BD24AE0C45748BA85A6B639D453B /* Pods-MoveiBubu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoveiBubu-dummy.m"; sourceTree = "<group>"; };
+		4B96CCDF56C54A73EE1C17CD48A5C388 /* Pods-MoveiBubuTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubuTests-Info.plist"; sourceTree = "<group>"; };
+		5E11BF1AC11959E35176A519928412C8 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoveiBubu-MoveiBubuUITests-dummy.m"; sourceTree = "<group>"; };
+		5ED020DDEEE8334C86E6D62F58065878 /* Pods-MoveiBubu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoveiBubu-umbrella.h"; sourceTree = "<group>"; };
+		615C1F0EB0D719F402F3D66E60D62634 /* Pods-MoveiBubuTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoveiBubuTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FFCA0A542F47164D3CF6BB813AA29EB /* Pods-MoveiBubu-MoveiBubuUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MoveiBubu-MoveiBubuUITests.modulemap"; sourceTree = "<group>"; };
+		71CB86A34CD4E7CDCF7AA210451AAC0B /* Pods-MoveiBubuTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoveiBubuTests-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		766B037CB405C8007FD07AFFC7C07B53 /* Pods-MoveiBubu-MoveiBubuUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MoveiBubu-MoveiBubuUITests.modulemap"; sourceTree = "<group>"; };
-		7907B16FBD735DEAC7CF7B64BB78732E /* SkeletonCollectionViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionViewProtocols.swift; path = SkeletonViewCore/Sources/API/Collections/CollectionViews/SkeletonCollectionViewProtocols.swift; sourceTree = "<group>"; };
-		7BC82B89461D2C71C92188B093EB1437 /* UILabel+SKExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+SKExtensions.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UILabel+SKExtensions.swift"; sourceTree = "<group>"; };
-		7C7F67D69FED1EACF9C6F553580B7E9E /* UIView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+CollectionSkeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
-		7D72E97903AB9BD29E8D0F08E0B3E499 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UILabel+Extensions.swift"; sourceTree = "<group>"; };
-		845DC2723285BC06FB6228F3F563BB4A /* ProcessInfo+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProcessInfo+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/FoundationExtensions/ProcessInfo+Extensions.swift"; sourceTree = "<group>"; };
-		846E4CF8C5FA6E428090F27763B4DDBA /* Pods-MoveiBubuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubuTests.release.xcconfig"; sourceTree = "<group>"; };
-		84D865F2EA0A3A6C00402015F8CB2722 /* SkeletonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonView.swift; path = SkeletonViewCore/Sources/API/SkeletonView.swift; sourceTree = "<group>"; };
-		89EB0D1D8FDB5CF78466B9C6F521B781 /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoveiBubu-MoveiBubuUITests-umbrella.h"; sourceTree = "<group>"; };
-		8B2EF8FA27A58CB71AB224E0D3F5BF14 /* SkeletonView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkeletonView-dummy.m"; sourceTree = "<group>"; };
-		95F497BCE5CE17BF3AD74D966A7DA039 /* UILabel+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+IBInspectable.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UILabel+IBInspectable.swift"; sourceTree = "<group>"; };
-		979A59FD7D3299E6C241FCCB1812F2D1 /* UITextView+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+IBInspectable.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UITextView+IBInspectable.swift"; sourceTree = "<group>"; };
-		9C418551FE9F5924B46AE81114E65AB7 /* SkeletonLayerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonLayerBuilder.swift; path = SkeletonViewCore/Sources/Internal/SkeletonLayerBuilders/SkeletonLayerBuilder.swift; sourceTree = "<group>"; };
+		849D14404B6596F550FF5DF13F3AACCB /* Pods-MoveiBubuTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubuTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E9E57E348AC15BBF49611798EE1307F /* UICollectionView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+CollectionSkeleton.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UICollectionView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
-		9EFF2C32D90590A2970EF0143CD45F53 /* SkeletonLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonLayer.swift; path = SkeletonViewCore/Sources/Internal/Models/SkeletonLayer.swift; sourceTree = "<group>"; };
-		9F48FCA4A04164B96556C7CE90B53051 /* SkeletonType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonType.swift; path = SkeletonViewCore/Sources/API/Models/SkeletonType.swift; sourceTree = "<group>"; };
-		9FD8DDE60D87C84195DDF66CE470AB0B /* SkeletonMultilineLayerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonMultilineLayerBuilder.swift; path = SkeletonViewCore/Sources/Internal/SkeletonLayerBuilders/SkeletonMultilineLayerBuilder.swift; sourceTree = "<group>"; };
-		A0DB2E5EAE598B150A1E2A9739994811 /* UITextView+SKExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+SKExtensions.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UITextView+SKExtensions.swift"; sourceTree = "<group>"; };
-		A504577C068F8918940B04FB5F55630C /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A5F9679ADDE9B5CAC6B09D470218F3FD /* Pods-MoveiBubuTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubuTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A873E9EB431BFA5A1FDEC937BD4D7D89 /* Pods-MoveiBubu-MoveiBubuUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MoveiBubu-MoveiBubuUITests"; path = Pods_MoveiBubu_MoveiBubuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA4C070D233BBB09D2E7C796A6595A7B /* SkeletonView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SkeletonView-Info.plist"; sourceTree = "<group>"; };
-		B2E9DF5C1CE398D3D50007BEA45CDFE4 /* UIView+AssociatedObjects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AssociatedObjects.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+AssociatedObjects.swift"; sourceTree = "<group>"; };
-		B3CEE0491030633A1A688C3FBFD7C037 /* SkeletonTreeNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SkeletonTreeNode+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/SkeletonTreeNode+Extensions.swift"; sourceTree = "<group>"; };
-		B4BE454C63D3C9E46C07A13AD2E7161A /* SkeletonFlowHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonFlowHandler.swift; path = SkeletonViewCore/Sources/Internal/SkeletonFlowHandler.swift; sourceTree = "<group>"; };
-		B6CDA74C9DB9A8A599E115A00C4DE481 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Extensions.swift"; path = "SkeletonViewCore/Sources/API/UIKitExtensions/UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		B7567D6DF44EAE3126D6E1A2099A9945 /* Pods-MoveiBubu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoveiBubu-dummy.m"; sourceTree = "<group>"; };
-		B9FF82149680992BC73CFFC3ECB2404F /* Pods-MoveiBubu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoveiBubu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BB4E47FF402BBD21BD7103D21FEAC5F3 /* SkeletonDebug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonDebug.swift; path = SkeletonViewCore/Sources/Internal/Debug/SkeletonDebug.swift; sourceTree = "<group>"; };
-		BC3AEEB8CB3376AC68F63771F6E6D2BE /* UITableView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		BD784AFF61108A972E671BEDDF603F8E /* SkeletonView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkeletonView.debug.xcconfig; sourceTree = "<group>"; };
-		BE4318402BEAECC5A481DF35BF7B5F3A /* SkeletonTreeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTreeNode.swift; path = SkeletonViewCore/Sources/Internal/SkeletonTree/SkeletonTreeNode.swift; sourceTree = "<group>"; };
-		BEA6B7C93D98156767A3708EAB2E9354 /* RecoverableViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecoverableViewState.swift; path = SkeletonViewCore/Sources/Internal/Models/RecoverableViewState.swift; sourceTree = "<group>"; };
-		BED698562D42012F0696767A719222E5 /* UIView+AppLifecycleNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AppLifecycleNotifications.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+AppLifecycleNotifications.swift"; sourceTree = "<group>"; };
-		BFF3DC6EFAD9954CDFCF7C019AABB0D2 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = SkeletonViewCore/Sources/API/Deprecated.swift; sourceTree = "<group>"; };
-		C1F51D575C57574F267E6D19622DC873 /* SkeletonView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkeletonView.release.xcconfig; sourceTree = "<group>"; };
-		C30D0419714DF674D4CC9DED368F212C /* SkeletonView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkeletonView.modulemap; sourceTree = "<group>"; };
-		CAA48E208793EEC942BF35D2E038D7CD /* GradientDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientDirection.swift; path = SkeletonViewCore/Sources/API/Models/GradientDirection.swift; sourceTree = "<group>"; };
-		CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* SkeletonView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkeletonView; path = SkeletonView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D13C9491C9B283AA1A0C80F9B0A7E8E5 /* SkeletonExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonExtended.swift; path = SkeletonViewCore/Sources/API/SkeletonExtended.swift; sourceTree = "<group>"; };
-		D2A81D4D1B662FDE8A86AA0BAC6E3AAC /* Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D3E85EE6F09CF62753B4641C010CCF17 /* Pods-MoveiBubuTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MoveiBubuTests.modulemap"; sourceTree = "<group>"; };
-		D450C1CA7F8361C3F3ED9C45C13E3A8F /* Pods-MoveiBubuTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubuTests-Info.plist"; sourceTree = "<group>"; };
+		B95FFF6A15DFACEB946974710D6918AD /* Pods-MoveiBubu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MoveiBubu.modulemap"; sourceTree = "<group>"; };
+		CA1112F98E94886B90BBC19F97BD91DE /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoveiBubu-MoveiBubuUITests-umbrella.h"; sourceTree = "<group>"; };
+		D0749823F082F0A024705C7713CB0032 /* Pods-MoveiBubu-MoveiBubuUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-MoveiBubuUITests-Info.plist"; sourceTree = "<group>"; };
 		D46870CB93ABBD8BF46898882EEA35E4 /* Pods-MoveiBubu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MoveiBubu"; path = Pods_MoveiBubu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8B0A9B29BFD14AE1A0DDCE165EB1A51 /* Pods-MoveiBubu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoveiBubu-umbrella.h"; sourceTree = "<group>"; };
-		D9A8237E58CB34434A01F74AF68E573F /* Pods-MoveiBubu-MoveiBubuUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoveiBubu-MoveiBubuUITests-Info.plist"; sourceTree = "<group>"; };
-		DB9CA7CB0476939BDC356B11B75BEF51 /* UIView+Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Swizzling.swift"; path = "SkeletonViewCore/Sources/Internal/UIKitExtensions/UIView+Swizzling.swift"; sourceTree = "<group>"; };
-		DD156BFFC3137B9A1E9E555A8D82FEC1 /* Pods-MoveiBubu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MoveiBubu.modulemap"; sourceTree = "<group>"; };
-		DD58F2602D2703566A25ADFB76EED30C /* Pods-MoveiBubu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoveiBubu-frameworks.sh"; sourceTree = "<group>"; };
-		E032EDDDD6FEA5B6DEB3BDD8A96E38CE /* Pods-MoveiBubuTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoveiBubuTests-dummy.m"; sourceTree = "<group>"; };
-		E77ABC5917384A0A3618A4AB3B677CE0 /* Recoverable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recoverable.swift; path = SkeletonViewCore/Sources/Internal/SkeletonExtensions/Recoverable.swift; sourceTree = "<group>"; };
-		E8B41304B00D1623C73075C21AE55DA1 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "SkeletonViewCore/Sources/Internal/FoundationExtensions/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
-		E95D4BFCA2DF3083495B2853F734CBB5 /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swizzling.swift; path = SkeletonViewCore/Sources/Internal/Helpers/Swizzling.swift; sourceTree = "<group>"; };
-		EF5F5123209B163A4586D0F178376B6B /* SkeletonTableViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTableViewProtocols.swift; path = SkeletonViewCore/Sources/API/Collections/TableViews/SkeletonTableViewProtocols.swift; sourceTree = "<group>"; };
-		F9711C2187AE7BBC507A1B7793109A7B /* GradientDirection+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GradientDirection+Animations.swift"; path = "SkeletonViewCore/Sources/Internal/SkeletonExtensions/GradientDirection+Animations.swift"; sourceTree = "<group>"; };
-		FA6EA6C79C2D5A622E86B6CA2E0CDAFC /* SkeletonCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionDataSource.swift; path = SkeletonViewCore/Sources/Internal/Collections/SkeletonCollectionDataSource.swift; sourceTree = "<group>"; };
-		FE15EFDFE465D989A864A79828841955 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoveiBubu-MoveiBubuUITests-dummy.m"; sourceTree = "<group>"; };
+		E20E1C102B4552EA3F161465D64F1685 /* Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E62F289881492CB7677115B370A469DC /* Pods-MoveiBubuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F49DC8665F480E33F2CA6A7E3318F3CE /* Pods-MoveiBubuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubuTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD5F1DC4FB4E0B046EAE710BEF063848 /* Pods-MoveiBubu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoveiBubu-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD7ACF21A503D7E22AE6193D872E881A /* Pods-MoveiBubu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoveiBubu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2184502879E140E329AC1820441A4D81 /* Frameworks */ = {
+		5EBD4BA791B18EACC98C6434FEE117B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBACA6DA26767A67F50183DFE072A38 /* Foundation.framework in Frameworks */,
+				8CCF53187ADBCB8D911BA9448ACEADFB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EC71DED681E60A7CF278ED7470DCE2C /* Frameworks */ = {
+		7AABF03B8D97C7ECA16650827FAFB1A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E99222AAF4045AEE9711E701EFC2C5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EE6D70B6AC7B04496F8CF4DEB716D0F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BADA389CB08477C54ACF694B31549F10 /* Foundation.framework in Frameworks */,
+				D6D73CB795C1D24B529228D84131C1ED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,32 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D0B4C67677034DAC86B9BEA3774D70F /* Products */ = {
+		07B230E33DDCCB58EFEE5079FE3B82A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				D46870CB93ABBD8BF46898882EEA35E4 /* Pods-MoveiBubu */,
 				A873E9EB431BFA5A1FDEC937BD4D7D89 /* Pods-MoveiBubu-MoveiBubuUITests */,
 				3572E7A7F4EE989143706C50531C5316 /* Pods-MoveiBubuTests */,
-				CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* SkeletonView */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1D6550AC490D85081A3F6AA416559564 /* Pods-MoveiBubu-MoveiBubuUITests */ = {
-			isa = PBXGroup;
-			children = (
-				766B037CB405C8007FD07AFFC7C07B53 /* Pods-MoveiBubu-MoveiBubuUITests.modulemap */,
-				40F648AC7FD5E4119DF7D042C88157A6 /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.markdown */,
-				A504577C068F8918940B04FB5F55630C /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.plist */,
-				FE15EFDFE465D989A864A79828841955 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m */,
-				2B9C8DFC8C584D26FE392A2F57481312 /* Pods-MoveiBubu-MoveiBubuUITests-frameworks.sh */,
-				D9A8237E58CB34434A01F74AF68E573F /* Pods-MoveiBubu-MoveiBubuUITests-Info.plist */,
-				89EB0D1D8FDB5CF78466B9C6F521B781 /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h */,
-				0367873F6AA1C2865053B8535D18867E /* Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig */,
-				D2A81D4D1B662FDE8A86AA0BAC6E3AAC /* Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig */,
-			);
-			name = "Pods-MoveiBubu-MoveiBubuUITests";
-			path = "Target Support Files/Pods-MoveiBubu-MoveiBubuUITests";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -281,50 +106,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7943962C82D5148D73DB935D2CF9E97C /* Pods */ = {
+		82E306D8ABB8DA7AF5704F6ED16055EC /* Pods-MoveiBubu-MoveiBubuUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E407A2E96D98A1F1F08C1B2818D8CD14 /* SkeletonView */,
+				6FFCA0A542F47164D3CF6BB813AA29EB /* Pods-MoveiBubu-MoveiBubuUITests.modulemap */,
+				3A3A9FE92DE4DC09F9DA4888748DDFAA /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.markdown */,
+				1293DB2EF3D6051EC4B7B98D407A970F /* Pods-MoveiBubu-MoveiBubuUITests-acknowledgements.plist */,
+				5E11BF1AC11959E35176A519928412C8 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m */,
+				D0749823F082F0A024705C7713CB0032 /* Pods-MoveiBubu-MoveiBubuUITests-Info.plist */,
+				CA1112F98E94886B90BBC19F97BD91DE /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h */,
+				36D660F625B888703F9E974657EB5492 /* Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig */,
+				E20E1C102B4552EA3F161465D64F1685 /* Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Pods-MoveiBubu-MoveiBubuUITests";
+			path = "Target Support Files/Pods-MoveiBubu-MoveiBubuUITests";
 			sourceTree = "<group>";
 		};
-		9174B503CFA1D584B354EF0D7393BC3A /* Support Files */ = {
+		8821363A7DA9DC06CDF85C36A50B6CBE /* Pods-MoveiBubuTests */ = {
 			isa = PBXGroup;
 			children = (
-				C30D0419714DF674D4CC9DED368F212C /* SkeletonView.modulemap */,
-				8B2EF8FA27A58CB71AB224E0D3F5BF14 /* SkeletonView-dummy.m */,
-				AA4C070D233BBB09D2E7C796A6595A7B /* SkeletonView-Info.plist */,
-				4EBF1777EE67E784E123441E594BEBC8 /* SkeletonView-prefix.pch */,
-				399A5605D302355675609B128AB9543E /* SkeletonView-umbrella.h */,
-				BD784AFF61108A972E671BEDDF603F8E /* SkeletonView.debug.xcconfig */,
-				C1F51D575C57574F267E6D19622DC873 /* SkeletonView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SkeletonView";
-			sourceTree = "<group>";
-		};
-		9DFA553B07A4F442190E885824AE9C27 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D7F3F62F552F495114EEB790B6CAE0C8 /* Pods-MoveiBubu */,
-				1D6550AC490D85081A3F6AA416559564 /* Pods-MoveiBubu-MoveiBubuUITests */,
-				B1D226EC5361C2B13A4F43FE2D91CB26 /* Pods-MoveiBubuTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B1D226EC5361C2B13A4F43FE2D91CB26 /* Pods-MoveiBubuTests */ = {
-			isa = PBXGroup;
-			children = (
-				D3E85EE6F09CF62753B4641C010CCF17 /* Pods-MoveiBubuTests.modulemap */,
-				44DB9F995B0BC15D5062F93A532FA803 /* Pods-MoveiBubuTests-acknowledgements.markdown */,
-				A5F9679ADDE9B5CAC6B09D470218F3FD /* Pods-MoveiBubuTests-acknowledgements.plist */,
-				E032EDDDD6FEA5B6DEB3BDD8A96E38CE /* Pods-MoveiBubuTests-dummy.m */,
-				D450C1CA7F8361C3F3ED9C45C13E3A8F /* Pods-MoveiBubuTests-Info.plist */,
-				110DDB0DA2D1B2A7A70AD68401E411B0 /* Pods-MoveiBubuTests-umbrella.h */,
-				00A207A6CA65FA815BBD0D84A21AA89E /* Pods-MoveiBubuTests.debug.xcconfig */,
-				846E4CF8C5FA6E428090F27763B4DDBA /* Pods-MoveiBubuTests.release.xcconfig */,
+				2B2049C9000CB61CA41E62D1EB1EC53F /* Pods-MoveiBubuTests.modulemap */,
+				615C1F0EB0D719F402F3D66E60D62634 /* Pods-MoveiBubuTests-acknowledgements.markdown */,
+				849D14404B6596F550FF5DF13F3AACCB /* Pods-MoveiBubuTests-acknowledgements.plist */,
+				71CB86A34CD4E7CDCF7AA210451AAC0B /* Pods-MoveiBubuTests-dummy.m */,
+				4B96CCDF56C54A73EE1C17CD48A5C388 /* Pods-MoveiBubuTests-Info.plist */,
+				03D1BDAE5C78B5AF7F41E14BB5E2C2D9 /* Pods-MoveiBubuTests-umbrella.h */,
+				E62F289881492CB7677115B370A469DC /* Pods-MoveiBubuTests.debug.xcconfig */,
+				F49DC8665F480E33F2CA6A7E3318F3CE /* Pods-MoveiBubuTests.release.xcconfig */,
 			);
 			name = "Pods-MoveiBubuTests";
 			path = "Target Support Files/Pods-MoveiBubuTests";
@@ -335,9 +143,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7943962C82D5148D73DB935D2CF9E97C /* Pods */,
-				1D0B4C67677034DAC86B9BEA3774D70F /* Products */,
-				9DFA553B07A4F442190E885824AE9C27 /* Targets Support Files */,
+				07B230E33DDCCB58EFEE5079FE3B82A5 /* Products */,
+				EDDF70E8EABE6608209BE60E55EC33C9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,91 +156,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7F3F62F552F495114EEB790B6CAE0C8 /* Pods-MoveiBubu */ = {
+		DE2C56260BBAD5D6A906E64B091B3E43 /* Pods-MoveiBubu */ = {
 			isa = PBXGroup;
 			children = (
-				DD156BFFC3137B9A1E9E555A8D82FEC1 /* Pods-MoveiBubu.modulemap */,
-				B9FF82149680992BC73CFFC3ECB2404F /* Pods-MoveiBubu-acknowledgements.markdown */,
-				54BFCD13488070EF4F1A9B47D3C3AFD6 /* Pods-MoveiBubu-acknowledgements.plist */,
-				B7567D6DF44EAE3126D6E1A2099A9945 /* Pods-MoveiBubu-dummy.m */,
-				DD58F2602D2703566A25ADFB76EED30C /* Pods-MoveiBubu-frameworks.sh */,
-				41E997EC49FC02C99794E97E5CA329B7 /* Pods-MoveiBubu-Info.plist */,
-				D8B0A9B29BFD14AE1A0DDCE165EB1A51 /* Pods-MoveiBubu-umbrella.h */,
-				159D1C500F6BAFF3936461202F943CA8 /* Pods-MoveiBubu.debug.xcconfig */,
-				583B8CEFAA6F3D5C0CD03A79E4979A46 /* Pods-MoveiBubu.release.xcconfig */,
+				B95FFF6A15DFACEB946974710D6918AD /* Pods-MoveiBubu.modulemap */,
+				FD5F1DC4FB4E0B046EAE710BEF063848 /* Pods-MoveiBubu-acknowledgements.markdown */,
+				2E9E9AD983B874078CBBB73FAB744091 /* Pods-MoveiBubu-acknowledgements.plist */,
+				3ED5BD24AE0C45748BA85A6B639D453B /* Pods-MoveiBubu-dummy.m */,
+				3A36AEE65FB98DA40C8FE7876CD8A78B /* Pods-MoveiBubu-Info.plist */,
+				5ED020DDEEE8334C86E6D62F58065878 /* Pods-MoveiBubu-umbrella.h */,
+				FD7ACF21A503D7E22AE6193D872E881A /* Pods-MoveiBubu.debug.xcconfig */,
+				37A1B4760B06FF9D2F00A81A0B2D2DF1 /* Pods-MoveiBubu.release.xcconfig */,
 			);
 			name = "Pods-MoveiBubu";
 			path = "Target Support Files/Pods-MoveiBubu";
 			sourceTree = "<group>";
 		};
-		E407A2E96D98A1F1F08C1B2818D8CD14 /* SkeletonView */ = {
+		EDDF70E8EABE6608209BE60E55EC33C9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				52FC82B4D1961D2E4615BE398EFCE31E /* AssociationPolicy.swift */,
-				394427DF60B3BA952AD43C3052B5F5D9 /* CALayer+Animations.swift */,
-				0EE24659F592F4B4D820C189A842A595 /* CALayer+Extensions.swift */,
-				19966802DD56F105E896D87247928A6D /* CollectionSkeleton.swift */,
-				BFF3DC6EFAD9954CDFCF7C019AABB0D2 /* Deprecated.swift */,
-				E8B41304B00D1623C73075C21AE55DA1 /* DispatchQueue+Extensions.swift */,
-				CAA48E208793EEC942BF35D2E038D7CD /* GradientDirection.swift */,
-				F9711C2187AE7BBC507A1B7793109A7B /* GradientDirection+Animations.swift */,
-				343E553BB61C67F0870531DD31AC075D /* Int+Extensions.swift */,
-				0F072EE6DC99CF4FC5403BE3F5BB6C55 /* Notification+Extensions.swift */,
-				05DE8EE2D2F050B0C7798B589E748EBA /* Notification+SkeletonFlow.swift */,
-				144E64D95A6DD19729E74E72A9D38EF1 /* PrepareViewForSkeleton.swift */,
-				845DC2723285BC06FB6228F3F563BB4A /* ProcessInfo+Extensions.swift */,
-				E77ABC5917384A0A3618A4AB3B677CE0 /* Recoverable.swift */,
-				BEA6B7C93D98156767A3708EAB2E9354 /* RecoverableViewState.swift */,
-				6F2FE2B5B060F8CE2832A5221AF639A7 /* Recursive.swift */,
-				06357CD372CD4A1D2A45C4801941DC14 /* SkeletonAnimationBuilder.swift */,
-				433F2A18F9888C494AE3E903CC431911 /* SkeletonAppearance.swift */,
-				FA6EA6C79C2D5A622E86B6CA2E0CDAFC /* SkeletonCollectionDataSource.swift */,
-				5168F0752D9847EAB00F65C26B40BDFE /* SkeletonCollectionDelegate.swift */,
-				7907B16FBD735DEAC7CF7B64BB78732E /* SkeletonCollectionViewProtocols.swift */,
-				3F0EEB70AE4D03583F96FC4AE58360F1 /* SkeletonConfig.swift */,
-				BB4E47FF402BBD21BD7103D21FEAC5F3 /* SkeletonDebug.swift */,
-				D13C9491C9B283AA1A0C80F9B0A7E8E5 /* SkeletonExtended.swift */,
-				B4BE454C63D3C9E46C07A13AD2E7161A /* SkeletonFlowHandler.swift */,
-				67B0F688C426E00D7C2DEC70B58FA53A /* SkeletonGradient.swift */,
-				9EFF2C32D90590A2970EF0143CD45F53 /* SkeletonLayer.swift */,
-				9C418551FE9F5924B46AE81114E65AB7 /* SkeletonLayerBuilder.swift */,
-				9FD8DDE60D87C84195DDF66CE470AB0B /* SkeletonMultilineLayerBuilder.swift */,
-				0ECA8F8A604C245A783DC3CA6AF2862C /* SkeletonMultilinesLayerConfig.swift */,
-				43E360F84FD2F985C94905785C42440C /* SkeletonReusableCell.swift */,
-				EF5F5123209B163A4586D0F178376B6B /* SkeletonTableViewProtocols.swift */,
-				291269C0DEC0A94D5B7684CAB8B47FB4 /* SkeletonTextLineHeight.swift */,
-				175BCE62AAF862EF117401A2C4C3AB76 /* SkeletonTextNode.swift */,
-				26E4ED1C28850EAAEA6D64C9EDD12BD7 /* SkeletonTextNumberOfLines.swift */,
-				40AC71690AC04A6C0EC9A23D55BF4017 /* SkeletonTransitionStyle.swift */,
-				BE4318402BEAECC5A481DF35BF7B5F3A /* SkeletonTreeNode.swift */,
-				B3CEE0491030633A1A688C3FBFD7C037 /* SkeletonTreeNode+Extensions.swift */,
-				9F48FCA4A04164B96556C7CE90B53051 /* SkeletonType.swift */,
-				84D865F2EA0A3A6C00402015F8CB2722 /* SkeletonView.swift */,
-				65BA219B4E9A0BCE968188299D92E6BC /* SubviewsSkeletonables.swift */,
-				E95D4BFCA2DF3083495B2853F734CBB5 /* Swizzling.swift */,
-				9E9E57E348AC15BBF49611798EE1307F /* UICollectionView+CollectionSkeleton.swift */,
-				B6CDA74C9DB9A8A599E115A00C4DE481 /* UICollectionView+Extensions.swift */,
-				6BFC8D16FBC5C112220F016EE0B09897 /* UIColor+Skeleton.swift */,
-				7D72E97903AB9BD29E8D0F08E0B3E499 /* UILabel+Extensions.swift */,
-				95F497BCE5CE17BF3AD74D966A7DA039 /* UILabel+IBInspectable.swift */,
-				7BC82B89461D2C71C92188B093EB1437 /* UILabel+SKExtensions.swift */,
-				01BA6A434D0923E25B54D453572C6B60 /* UITableView+CollectionSkeleton.swift */,
-				BC3AEEB8CB3376AC68F63771F6E6D2BE /* UITableView+Extensions.swift */,
-				979A59FD7D3299E6C241FCCB1812F2D1 /* UITextView+IBInspectable.swift */,
-				A0DB2E5EAE598B150A1E2A9739994811 /* UITextView+SKExtensions.swift */,
-				BED698562D42012F0696767A719222E5 /* UIView+AppLifecycleNotifications.swift */,
-				B2E9DF5C1CE398D3D50007BEA45CDFE4 /* UIView+AssociatedObjects.swift */,
-				7C7F67D69FED1EACF9C6F553580B7E9E /* UIView+CollectionSkeleton.swift */,
-				0581CB65A610EF0EF600DDF8932FEF26 /* UIView+Extensions.swift */,
-				7204DB024D4E0D43B2139023ABE0C511 /* UIView+IBInspectable.swift */,
-				1E97DFAD51D813BB23859A33D891518F /* UIView+SkeletonView.swift */,
-				4E8E4588F37E9077B7C67F0C41458103 /* UIView+SKExtensions.swift */,
-				DB9CA7CB0476939BDC356B11B75BEF51 /* UIView+Swizzling.swift */,
-				7238CF6B425C9B7A5E520F1B2BA973F8 /* UIView+Transitions.swift */,
-				9174B503CFA1D584B354EF0D7393BC3A /* Support Files */,
+				DE2C56260BBAD5D6A906E64B091B3E43 /* Pods-MoveiBubu */,
+				82E306D8ABB8DA7AF5704F6ED16055EC /* Pods-MoveiBubu-MoveiBubuUITests */,
+				8821363A7DA9DC06CDF85C36A50B6CBE /* Pods-MoveiBubuTests */,
 			);
-			name = SkeletonView;
-			path = SkeletonView;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,27 +193,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6DC6D865379D4AFBF629EA469A6109 /* Headers */ = {
+		82A4B26C4D44E156FB85914B5A25E6B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C3800BE1CF1710DFF4DB6F1E0DA44F8 /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h in Headers */,
+				7680EC7C521C163F22E15DBC19407B8B /* Pods-MoveiBubu-MoveiBubuUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C41AF1AB71EE1BB013A75160005BA8C /* Headers */ = {
+		8B5D91E62314D14BE57E5F708C9FFCCA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF0A5F45C9A1CEF0AB0A18DF870419C /* SkeletonView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9E34A7FFE2C35B8ADDFA48DAE3598B9B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6F2D6CFF26B932F73F5DBD0536EADA88 /* Pods-MoveiBubu-umbrella.h in Headers */,
+				CCD1DC1C7BB9FE75857961E49D295FA3 /* Pods-MoveiBubu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				16CD43C37E4A4CDD222BA44709BBC8EE /* PBXTargetDependency */,
+				1835B339A5EEF8273582D4EFBB085935 /* PBXTargetDependency */,
 			);
 			name = "Pods-MoveiBubuTests";
 			productName = Pods_MoveiBubuTests;
@@ -495,17 +233,16 @@
 		};
 		5A3D7173ECE3EAEAAFCE0748ECC6450A /* Pods-MoveiBubu-MoveiBubuUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA39446727C17B3D964DCD2A3B3AAC1B /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu-MoveiBubuUITests" */;
+			buildConfigurationList = 3ED829815722A3A56E8C00AD5BCAA33E /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu-MoveiBubuUITests" */;
 			buildPhases = (
-				0A6DC6D865379D4AFBF629EA469A6109 /* Headers */,
-				4DBBAE5C47B6F62D16CA260E65EBE866 /* Sources */,
-				8EC71DED681E60A7CF278ED7470DCE2C /* Frameworks */,
-				0CDEF4D8A0AF3BACFF9942A324F85032 /* Resources */,
+				82A4B26C4D44E156FB85914B5A25E6B3 /* Headers */,
+				B463E984B9DB3CAD3A54DE4C6EDFFF1E /* Sources */,
+				7AABF03B8D97C7ECA16650827FAFB1A8 /* Frameworks */,
+				31694F5424F0F771FD02D80D00FD6074 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8B357477A5E59D9374789B4529290E36 /* PBXTargetDependency */,
 			);
 			name = "Pods-MoveiBubu-MoveiBubuUITests";
 			productName = Pods_MoveiBubu_MoveiBubuUITests;
@@ -514,39 +251,20 @@
 		};
 		5D96F144EDD59EA6DFF1010F55CCB1F3 /* Pods-MoveiBubu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72167B97425F100A03DA7701B1F2BF93 /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu" */;
+			buildConfigurationList = E8DEE7F238E4E98CFD9F675487866505 /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu" */;
 			buildPhases = (
-				9E34A7FFE2C35B8ADDFA48DAE3598B9B /* Headers */,
-				8B392982D2E858BABE47F0C68069FDBB /* Sources */,
-				2184502879E140E329AC1820441A4D81 /* Frameworks */,
-				974D01596FFD3D158FC41B419191DAC6 /* Resources */,
+				8B5D91E62314D14BE57E5F708C9FFCCA /* Headers */,
+				C39C9E0A128CEC03E285D79370E80667 /* Sources */,
+				5EBD4BA791B18EACC98C6434FEE117B1 /* Frameworks */,
+				3DEE8AA40C2923BE0CA868B0AD156C08 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B826FD656E5234EAB2DE52887D10CCCC /* PBXTargetDependency */,
 			);
 			name = "Pods-MoveiBubu";
 			productName = Pods_MoveiBubu;
 			productReference = D46870CB93ABBD8BF46898882EEA35E4 /* Pods-MoveiBubu */;
-			productType = "com.apple.product-type.framework";
-		};
-		8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99E2951F31175B4761EC7B1EC1C84A65 /* Build configuration list for PBXNativeTarget "SkeletonView" */;
-			buildPhases = (
-				9C41AF1AB71EE1BB013A75160005BA8C /* Headers */,
-				C58A2BF6D26B4BE6FF16D51BF3BDA293 /* Sources */,
-				9EE6D70B6AC7B04496F8CF4DEB716D0F /* Frameworks */,
-				D103C5966325F131027FA13725BF60AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SkeletonView;
-			productName = SkeletonView;
-			productReference = CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* SkeletonView */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -567,34 +285,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1D0B4C67677034DAC86B9BEA3774D70F /* Products */;
+			productRefGroup = 07B230E33DDCCB58EFEE5079FE3B82A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5D96F144EDD59EA6DFF1010F55CCB1F3 /* Pods-MoveiBubu */,
 				5A3D7173ECE3EAEAAFCE0748ECC6450A /* Pods-MoveiBubu-MoveiBubuUITests */,
 				1868757DE4844E2B6121660201EAA8A2 /* Pods-MoveiBubuTests */,
-				8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0CDEF4D8A0AF3BACFF9942A324F85032 /* Resources */ = {
+		31694F5424F0F771FD02D80D00FD6074 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		974D01596FFD3D158FC41B419191DAC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D103C5966325F131027FA13725BF60AA /* Resources */ = {
+		3DEE8AA40C2923BE0CA868B0AD156C08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -611,19 +321,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4DBBAE5C47B6F62D16CA260E65EBE866 /* Sources */ = {
+		B463E984B9DB3CAD3A54DE4C6EDFFF1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A74A5897683ABC8A2E081B7B8BE17C /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B392982D2E858BABE47F0C68069FDBB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A60DACE9E8ADAF150C2F770FC5887AE4 /* Pods-MoveiBubu-dummy.m in Sources */,
+				B35B10B930693EF6963F6723FDD81EA0 /* Pods-MoveiBubu-MoveiBubuUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,136 +337,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C58A2BF6D26B4BE6FF16D51BF3BDA293 /* Sources */ = {
+		C39C9E0A128CEC03E285D79370E80667 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1829EF9AC1A7C0EE68BFFE2D6DEB8D /* AssociationPolicy.swift in Sources */,
-				EBE33106D2F992A6371EF38E67FCB45C /* CALayer+Animations.swift in Sources */,
-				182DB8FC7B75CEAFFC80B8DCF2DDAE2A /* CALayer+Extensions.swift in Sources */,
-				89C36D86454EF394CC8D9AAEDAF4E908 /* CollectionSkeleton.swift in Sources */,
-				24C3AE66D67FE633CC0864FD7A805880 /* Deprecated.swift in Sources */,
-				DE68D2A88D305EBF758713D3C4F66F96 /* DispatchQueue+Extensions.swift in Sources */,
-				39165C2314870B5E84EF4D7900D8C068 /* GradientDirection.swift in Sources */,
-				85E2C79FB06E72B588D40E999266F712 /* GradientDirection+Animations.swift in Sources */,
-				8AFEC3FDFB1AA2EEE863E30034C5D247 /* Int+Extensions.swift in Sources */,
-				3FAECBFCB37AAFB5BDDA10AB0B81B1E9 /* Notification+Extensions.swift in Sources */,
-				0D5539D20DA378F111851D431717BE6F /* Notification+SkeletonFlow.swift in Sources */,
-				5186FA9FA0244EBEB68A20D465624863 /* PrepareViewForSkeleton.swift in Sources */,
-				F012180366FC9F017E5237B64607D75B /* ProcessInfo+Extensions.swift in Sources */,
-				4A4330036BF48FADC8689371C657F1D7 /* Recoverable.swift in Sources */,
-				255B8039A5422D5487B7E090A69D6686 /* RecoverableViewState.swift in Sources */,
-				487DCA22638C799DA246A224DC2B66DF /* Recursive.swift in Sources */,
-				D703952D56064AE264D736910DC80D7B /* SkeletonAnimationBuilder.swift in Sources */,
-				28C475EE48BC8C9C1AA9DE48A2F4D01C /* SkeletonAppearance.swift in Sources */,
-				9EDB6E03CFF61D59CD4F02849D3300AF /* SkeletonCollectionDataSource.swift in Sources */,
-				EAD128E781A9681A0FBDDBEEADD22B89 /* SkeletonCollectionDelegate.swift in Sources */,
-				F58A6AC2EEE98442E0A282EDAE7D5099 /* SkeletonCollectionViewProtocols.swift in Sources */,
-				B3B3B2A2CA9E063CF7C8FBBC35B48FE2 /* SkeletonConfig.swift in Sources */,
-				F7B1C1329581FCC09F54B77788F94A85 /* SkeletonDebug.swift in Sources */,
-				6D5A43E0CEC1546339105DB3465B5264 /* SkeletonExtended.swift in Sources */,
-				BD3663D9F8B999A949ADBBB3BFA8F2CD /* SkeletonFlowHandler.swift in Sources */,
-				AE54A6FAD49B5524E11AC0BD7BB5BEC2 /* SkeletonGradient.swift in Sources */,
-				4DEA179D81118F2F2FD967142986897D /* SkeletonLayer.swift in Sources */,
-				79B45DC5D9CDB522C5316E79A97E64A2 /* SkeletonLayerBuilder.swift in Sources */,
-				C9B57C6951420E3C0F6420B6C13284E9 /* SkeletonMultilineLayerBuilder.swift in Sources */,
-				44D186EDEAE3B83A52108DC4B8CBDD8E /* SkeletonMultilinesLayerConfig.swift in Sources */,
-				EFE255576A3DF0CDE10858E3B2D7EFE3 /* SkeletonReusableCell.swift in Sources */,
-				2F76E04866F9F4E4D9B17F90E94A969C /* SkeletonTableViewProtocols.swift in Sources */,
-				725323D4A321DBF980E97603D961CDE1 /* SkeletonTextLineHeight.swift in Sources */,
-				052FBB9363B1BC1FDB349E3F3CEE69C6 /* SkeletonTextNode.swift in Sources */,
-				28011A04F91E9E351EB87E0D4355E7CE /* SkeletonTextNumberOfLines.swift in Sources */,
-				4B810DCCDEC4D31F78EA6AD2AF3F9EEF /* SkeletonTransitionStyle.swift in Sources */,
-				9E873CCC232F678B41009471A95D181D /* SkeletonTreeNode.swift in Sources */,
-				F851C212FE2C9EFE8CA109D27E5CA7B0 /* SkeletonTreeNode+Extensions.swift in Sources */,
-				E80F6AD40556AA586E6CD4F2AD5DDBD3 /* SkeletonType.swift in Sources */,
-				0E7E2449066EB2DFE86D1E98F169FB40 /* SkeletonView.swift in Sources */,
-				B91996622DF193F86DF5349242B65507 /* SkeletonView-dummy.m in Sources */,
-				685A0A7F0130E280E9684E485D03A62E /* SubviewsSkeletonables.swift in Sources */,
-				D9120F6113E93C120DDA31F0CFA8E394 /* Swizzling.swift in Sources */,
-				7DCDF7BEE7C5BF26E51EA0E659513D5F /* UICollectionView+CollectionSkeleton.swift in Sources */,
-				7BDCD44C8886591445A7DFEF6915B0BA /* UICollectionView+Extensions.swift in Sources */,
-				3DC80AFB3A1C2F7D6B86B4CCA77DEEA0 /* UIColor+Skeleton.swift in Sources */,
-				C74C07031ACD244428C0B4AB8B91986D /* UILabel+Extensions.swift in Sources */,
-				4573B8B1B1787D61DBAB8686F58000AA /* UILabel+IBInspectable.swift in Sources */,
-				71E0314B48058EB95C1DD025D013EF98 /* UILabel+SKExtensions.swift in Sources */,
-				1A99582B47723D7282959E2FEF44CCA3 /* UITableView+CollectionSkeleton.swift in Sources */,
-				5BC7985CFEF8890CCF0653CC9E69024A /* UITableView+Extensions.swift in Sources */,
-				1D735C25C4B9D9687CBD5B7A82C5BB9B /* UITextView+IBInspectable.swift in Sources */,
-				2A91AFF759771F30762A499683402981 /* UITextView+SKExtensions.swift in Sources */,
-				C3A7962ECF086AF37895D11C63EAD40D /* UIView+AppLifecycleNotifications.swift in Sources */,
-				7AAC9A8FA6E3BEFDCAD561EBECA4104D /* UIView+AssociatedObjects.swift in Sources */,
-				4B5B7F4937945D28D8CAE2BD46622873 /* UIView+CollectionSkeleton.swift in Sources */,
-				D0129BE19086C6A77A52DF92151A0CA2 /* UIView+Extensions.swift in Sources */,
-				37B83B2C1AA6CCF24D088098B46AA7E1 /* UIView+IBInspectable.swift in Sources */,
-				D38C419E4D46A900BEB4124D0CAFA6E7 /* UIView+SkeletonView.swift in Sources */,
-				EFAC89938AB4509807BF9CFBF16FA0CE /* UIView+SKExtensions.swift in Sources */,
-				578D4EE7467AA9C2451989153BBCC911 /* UIView+Swizzling.swift in Sources */,
-				0AD12B0895E23C85CFB097DA52ECE2F7 /* UIView+Transitions.swift in Sources */,
+				C46C9B4BD839DEFD18DEE1CD8DC730CC /* Pods-MoveiBubu-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		16CD43C37E4A4CDD222BA44709BBC8EE /* PBXTargetDependency */ = {
+		1835B339A5EEF8273582D4EFBB085935 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MoveiBubu";
 			target = 5D96F144EDD59EA6DFF1010F55CCB1F3 /* Pods-MoveiBubu */;
-			targetProxy = CB4FADB7BD0080977603A3D2BBF64AC7 /* PBXContainerItemProxy */;
-		};
-		8B357477A5E59D9374789B4529290E36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SkeletonView;
-			target = 8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */;
-			targetProxy = 42267F2B7AB716B1C4F7EF6578A61E23 /* PBXContainerItemProxy */;
-		};
-		B826FD656E5234EAB2DE52887D10CCCC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SkeletonView;
-			target = 8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */;
-			targetProxy = 0281B8BDD318D3D087C42D52961A45E6 /* PBXContainerItemProxy */;
+			targetProxy = 1C8F7408AF760CFD6FDA49B49ABE0210 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04CAE82EE7039060DE6CF853F5375DD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 159D1C500F6BAFF3936461202F943CA8 /* Pods-MoveiBubu.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoveiBubu/Pods-MoveiBubu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MoveiBubu/Pods-MoveiBubu.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -831,79 +423,6 @@
 			};
 			name = Debug;
 		};
-		250A823514B896DADEEE3D5FC86EB4C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2A81D4D1B662FDE8A86AA0BAC6E3AAC /* Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoveiBubu-MoveiBubuUITests/Pods-MoveiBubu-MoveiBubuUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MoveiBubu-MoveiBubuUITests/Pods-MoveiBubu-MoveiBubuUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		27566B7C043BA97648E750D8887FF6F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1F51D575C57574F267E6D19622DC873 /* SkeletonView.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkeletonView/SkeletonView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkeletonView/SkeletonView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SkeletonView/SkeletonView.modulemap";
-				PRODUCT_MODULE_NAME = SkeletonView;
-				PRODUCT_NAME = SkeletonView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		2DE0D8898245310716431F92FA4989FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -966,10 +485,12 @@
 			};
 			name = Release;
 		};
-		373470549263997DCFC8B8091E008546 /* Debug */ = {
+		3657BCA56736B32864E631939FAC76B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD784AFF61108A972E671BEDDF603F8E /* SkeletonView.debug.xcconfig */;
+			baseConfigurationReference = FD7ACF21A503D7E22AE6193D872E881A /* Pods-MoveiBubu.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -978,22 +499,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkeletonView/SkeletonView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkeletonView/SkeletonView-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MoveiBubu/Pods-MoveiBubu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SkeletonView/SkeletonView.modulemap";
-				PRODUCT_MODULE_NAME = SkeletonView;
-				PRODUCT_NAME = SkeletonView;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MoveiBubu/Pods-MoveiBubu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1002,7 +524,7 @@
 		};
 		5A1BFDA413499336476BCCDAC0884F3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00A207A6CA65FA815BBD0D84A21AA89E /* Pods-MoveiBubuTests.debug.xcconfig */;
+			baseConfigurationReference = E62F289881492CB7677115B370A469DC /* Pods-MoveiBubuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1037,47 +559,9 @@
 			};
 			name = Debug;
 		};
-		C288ADF24394A73DC89D9E07A20422E2 /* Release */ = {
+		8FF876F06F36FB1950ABEFA249E9DCE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 846E4CF8C5FA6E428090F27763B4DDBA /* Pods-MoveiBubuTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MoveiBubuTests/Pods-MoveiBubuTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MoveiBubuTests/Pods-MoveiBubuTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DF4BF62D71862C5F7D064519E7C2B79F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 583B8CEFAA6F3D5C0CD03A79E4979A46 /* Pods-MoveiBubu.release.xcconfig */;
+			baseConfigurationReference = 37A1B4760B06FF9D2F00A81A0B2D2DF1 /* Pods-MoveiBubu.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1113,9 +597,9 @@
 			};
 			name = Release;
 		};
-		EDEFB0E9E587421B908DF5705A56117F /* Debug */ = {
+		AD6063FAAB818D40BE63931BCDFD5158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0367873F6AA1C2865053B8535D18867E /* Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig */;
+			baseConfigurationReference = 36D660F625B888703F9E974657EB5492 /* Pods-MoveiBubu-MoveiBubuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1150,6 +634,82 @@
 			};
 			name = Debug;
 		};
+		B01C9778E36BAE23445726DA50CFA5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20E1C102B4552EA3F161465D64F1685 /* Pods-MoveiBubu-MoveiBubuUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MoveiBubu-MoveiBubuUITests/Pods-MoveiBubu-MoveiBubuUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MoveiBubu-MoveiBubuUITests/Pods-MoveiBubu-MoveiBubuUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C288ADF24394A73DC89D9E07A20422E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49DC8665F480E33F2CA6A7E3318F3CE /* Pods-MoveiBubuTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MoveiBubuTests/Pods-MoveiBubuTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MoveiBubuTests/Pods-MoveiBubuTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1158,6 +718,15 @@
 			buildConfigurations = (
 				5A1BFDA413499336476BCCDAC0884F3E /* Debug */,
 				C288ADF24394A73DC89D9E07A20422E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED829815722A3A56E8C00AD5BCAA33E /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu-MoveiBubuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6063FAAB818D40BE63931BCDFD5158 /* Debug */,
+				B01C9778E36BAE23445726DA50CFA5AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1171,29 +740,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72167B97425F100A03DA7701B1F2BF93 /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu" */ = {
+		E8DEE7F238E4E98CFD9F675487866505 /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04CAE82EE7039060DE6CF853F5375DD8 /* Debug */,
-				DF4BF62D71862C5F7D064519E7C2B79F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99E2951F31175B4761EC7B1EC1C84A65 /* Build configuration list for PBXNativeTarget "SkeletonView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				373470549263997DCFC8B8091E008546 /* Debug */,
-				27566B7C043BA97648E750D8887FF6F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA39446727C17B3D964DCD2A3B3AAC1B /* Build configuration list for PBXNativeTarget "Pods-MoveiBubu-MoveiBubuUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDEFB0E9E587421B908DF5705A56117F /* Debug */,
-				250A823514B896DADEEE3D5FC86EB4C0 /* Release */,
+				3657BCA56736B32864E631939FAC76B6 /* Debug */,
+				8FF876F06F36FB1950ABEFA249E9DCE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
