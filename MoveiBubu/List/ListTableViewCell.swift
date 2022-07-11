@@ -66,25 +66,8 @@ class ListTableViewCell: UITableViewCell {
     func configure (movie: ListModel) {
         movieNameLabel.text = movie.title
         releaseDateLabel.text = movie.release_date
-        
-        if let backPath = movie.backdrop_path {
-            if let imageURL: URL = URL(string: "\(baseImageURL)\(backPath)") {
-                backRoundImage.kf.setImage(with: imageURL)
-                } else {
-                backRoundImage.image = nil
-                }
-            } else {
-            backRoundImage.image = nil
-            }
-        if let posterPath = movie.poster_path {
-            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                movieImageView.kf.setImage(with: imageURL)
-                } else {
-                movieImageView.image = nil
-                }
-            } else {
-                movieImageView.image = nil
-            }
+        backRoundImage.getImage(path: movie.backdrop_path)
+        movieImageView.getImage(path: movie.poster_path)
         if let rait = movie.vote_average {
             raitingLabel.text = "IMDB: \(String(rait))"
             }

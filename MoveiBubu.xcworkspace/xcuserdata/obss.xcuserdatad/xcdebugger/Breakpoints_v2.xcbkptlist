@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "10D28C6F-3F80-44EE-891B-CE826C03D95D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22239392-99DD-4944-B457-FC0BBC800BD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Network/Services/ListServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getSearch(moon:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "710FAC76-5118-47BC-A7F0-A7085ACDF369"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoveiBubu/Detail/BigCast/BigCastViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "configure()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "710FAC76-5118-47BC-A7F0-A7085ACDF369 - b8ebefd8ba8beea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.BigCastViewController.configure() -&gt; ()"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/bugra.dincaslan/MoveiBubu/Detail/BigCast/BigCastViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "3982">
+               </Location>
+               <Location
+                  uuid = "710FAC76-5118-47BC-A7F0-A7085ACDF369 - b8ebefd8ba8beea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MoveiBubu.BigCastViewController.configure() -&gt; ()"
+                  moduleName = "MoveiBubu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/obss/Desktop/movieBubu/bugra.dincaslan/MoveiBubu/Detail/BigCast/BigCastViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "4044">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

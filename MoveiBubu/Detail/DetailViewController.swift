@@ -117,7 +117,8 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     private var genres: [Genres] = []
     private var bigCast: [castModel] = []
     private var big: castModel?
-    private let baseImageURL = "https://image.tmdb.org/t/p/w500"
+  //  private let baseImageURL = "https://image.tmdb.org/t/p/w500"
+    //let getImage: imageServicesProtocol = getImageServices
     var id : Int?
     var favorite: Task?
     
@@ -138,67 +139,62 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func configure() {
         if let movie = details {
+            
+            imageView.getImage(path: movie.poster_path)
+            
             if let name = movie.title {
-                nameLabel.text = "TITLE: \(String(name))".localized()
+                nameLabel.text = "TITLE: \(String(name))".localize
             } else {
                 nameLabel.text = nil
             }
-            if let posterPath = movie.poster_path {
-                if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                    imageView.kf.setImage(with: imageURL)
-                    } else {
-                    imageView.image = nil
-                    }
-                } else {
-                imageView.image = nil
-            }
            if let otitle = movie.original_title {
-               orginalTitleLabel.text = "ORGINAL TITLE: \(String(otitle))".localized()
+               orginalTitleLabel.text = "ORGINAL TITLE: \(String(otitle))".localize
            } else {
                orginalTitleLabel.text = nil
            }
             if let olanguage = movie.original_language {
-                orginalLanguageLabel.text = "ORIGINAL LANGUAGE: \(String(olanguage))".localized()
+                orginalLanguageLabel.text = "ORIGINAL LANGUAGE: \(String(olanguage))".localize
             } else {
                 orginalLanguageLabel.text = nil
             }
             
             if let release = movie.release_date {
-                releaseDateLabel.text = "RELEASE DATE: \(String(release))".localized()
+                releaseDateLabel.text = "RELEASE DATE: \(String(release))".localize
             } else {
                 releaseDateLabel.text = nil
             }
             if let budget = movie.budget{
-                budgetLabel.text = "BUDGET: \(String(budget))".localized()
+                budgetLabel.text = "BUDGET: $\(budget.formattedWithSeparator)".localize
             } else {
                 budgetLabel.text = nil
             }
             if let revenue = movie.revenue {
-                revenueLabel.text = "REVENUE: \(String(revenue))".localized()
+                revenueLabel.text = "REVENUE: \(revenue.formattedWithSeparator)".localize
             } else {
                 revenueLabel.text = nil
             }
            
             if let overview = movie.overview {
-                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))".localized()
+                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))".localize
             } else {
                 overViewLabel.text = nil
             }
             if let runtime = movie.runtime {
-                runTimeLabel.text = "RUNTIME: \(String(runtime))".localized()
+                runTimeLabel.text = "RUNTIME: \(String(runtime))".localize
             } else {
                 runTimeLabel.text = nil
             }
             if let productioncompany = movie.production_companies {
                 productionCompaniesLabel.text = ""
                 for company in productioncompany {
-                    productionCompaniesLabel.text?.append(" \(company.name ?? "").\n".localized())
+                    productionCompaniesLabel.text?.append(" \(company.name ?? "").\n".localize())
                     }
                 } else {
                 productionCompaniesLabel.text = nil
             }
             if let raiting = movie.vote_average {
-                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))".localized()
+                let voteAverage = "Vote Average".localize
+                raitingLabel.text = "\(voteAverage) \(String(raiting))"
             } else {
                 raitingLabel.text = nil
             }
@@ -310,11 +306,12 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 }
             //return
         default:
-            if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {
+            return
+            /*if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController {
                 detailVC.id = recomm[indexPath.row].id
                 self.navigationController?.pushViewController(detailVC, animated: true)
                 
-            }
+            }*/
     }
 
 /*extension String {
@@ -331,7 +328,7 @@ func withBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
     
 }
 
-extension String { // string tipler,ni lokalize etmek için dahil edilmiş olan eklenti.
+/*extension String { // string tipler,ni lokalize etmek için dahil edilmiş olan eklenti.
 
     func localized() -> String {
 
@@ -339,7 +336,23 @@ extension String { // string tipler,ni lokalize etmek için dahil edilmiş olan 
         
     }
     
+}*/
+extension String {
+
+    func localize(comment: String = "") -> String {
+
+        return NSLocalizedString(self, comment: comment)
+
+    }
+
+    var localize: String {
+
+        return localize()
+
+    }
+
 }
+
 /*func cleanDollars(_ value: String?) -> String {
     guard value != nil else { return "$0.00" }
     let doubleValue = Double(value!) ?? 0.0

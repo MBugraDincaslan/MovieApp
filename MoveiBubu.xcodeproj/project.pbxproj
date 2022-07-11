@@ -36,6 +36,7 @@
 		6FAD49792863155F00CFD949 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6FAD49782863155F00CFD949 /* RealmSwift */; };
 		6FAD497C2863236C00CFD949 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD497B2863236C00CFD949 /* Data.swift */; };
 		6FCF2853287C615400A8B7D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FCF2855287C615400A8B7D2 /* Localizable.strings */; };
+		6FCF285A287C884C00A8B7D2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF2859287C884B00A8B7D2 /* Extension.swift */; };
 		6FF1718A285B76EC00A689A9 /* CastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17188285B76EC00A689A9 /* CastCollectionViewCell.swift */; };
 		6FF1718B285B76EC00A689A9 /* CastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17189285B76EC00A689A9 /* CastCollectionViewCell.xib */; };
 		6FF17194285B7AA600A689A9 /* castModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17193285B7AA600A689A9 /* castModel.swift */; };
@@ -107,6 +108,7 @@
 		6FCF2852287C613900A8B7D2 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6FCF2854287C615400A8B7D2 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6FCF2856287C615600A8B7D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FCF2859287C884B00A8B7D2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		6FF17188285B76EC00A689A9 /* CastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCollectionViewCell.swift; sourceTree = "<group>"; };
 		6FF17189285B76EC00A689A9 /* CastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastCollectionViewCell.xib; sourceTree = "<group>"; };
 		6FF17193285B7AA600A689A9 /* castModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = castModel.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				6FF1719F285B82D700A689A9 /* CreditsServices.swift */,
 				6FF171A3285CD02300A689A9 /* RecommendationServices.swift */,
 				6FAD496E2860C74F00CFD949 /* BigCastServices.swift */,
+				6FCF2859287C884B00A8B7D2 /* Extension.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				6FF98134285A070200D58AD1 /* DetailViewController.swift in Sources */,
 				6FF1718A285B76EC00A689A9 /* CastCollectionViewCell.swift in Sources */,
 				6FF171A4285CD02300A689A9 /* RecommendationServices.swift in Sources */,
+				6FCF285A287C884C00A8B7D2 /* Extension.swift in Sources */,
 				6FF17198285B81E000A689A9 /* creditsModel.swift in Sources */,
 				6FAD49722860D69A00CFD949 /* GenresCollectionViewCell.swift in Sources */,
 				6FF98131285A066300D58AD1 /* DetailModel.swift in Sources */,

@@ -21,7 +21,7 @@ class BigCastViewController: UIViewController {
     private let bigcastservices: BigCastServicesProtocol = BigCastServices()
     private var cast: castModel?
     var id : Int?
-    private let baseImageURL = "https://image.tmdb.org/t/p/w500"
+   // private let baseImageURL = "https://image.tmdb.org/t/p/w500"
     
     override func viewDidLoad() {
         
@@ -33,16 +33,7 @@ class BigCastViewController: UIViewController {
     
     func configure() {
         if let character = cast {
-            if let posterPath = character.profile_path {
-                if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                    castImageView.kf.setImage(with: imageURL)
-                    } else {
-                    castImageView.image = nil
-                    }
-                
-            } else {
-                castImageView.image = nil
-            }
+            castImageView.getImage(path: character.profile_path)
             if let name = character.name {
                 nameLabel.text = "NAME: \(String(name))"
             } else {
@@ -65,7 +56,12 @@ class BigCastViewController: UIViewController {
                 deathDayLabel.text = nil
             }
             if let biograpy = character.biography {
-                biographyLabel.text = "BIOGRAPY: \(String(biograpy))"
+                if biograpy != "" {
+                    biographyLabel.text = "BIOGRAPY: \(String(biograpy))"
+                } else {
+                    biographyLabel.text = nil
+                }
+                
             } else {
                 biographyLabel.text = nil
             }

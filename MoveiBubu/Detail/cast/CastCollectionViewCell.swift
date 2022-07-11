@@ -10,7 +10,7 @@ import Kingfisher
 
 class CastCollectionViewCell: UICollectionViewCell {
     
-    private let baseImageURL = "https://image.tmdb.org/t/p/w500"
+    //private let baseImageURL = "https://image.tmdb.org/t/p/w500"
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -18,15 +18,7 @@ class CastCollectionViewCell: UICollectionViewCell {
     
     func configureRecomm (movie: ListModel) {
         characterLabel.isHidden = true
-        if let posterPath = movie.poster_path {
-            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                imageView.kf.setImage(with: imageURL)
-                } else {
-                imageView.image = nil
-                }
-            } else {
-            imageView.image = nil
-        }
+        imageView.getImage(path: movie.poster_path)
         if let name = movie.title {
             nameLabel.text = name
         } else {
@@ -36,15 +28,7 @@ class CastCollectionViewCell: UICollectionViewCell {
     }
     
     func configure (casting: creditsModel) {
-        if let posterPath = casting.profile_path{
-            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                imageView.kf.setImage(with: imageURL)
-                } else {
-                imageView.image = nil
-                }
-            } else {
-            imageView.image = nil
-        }
+        imageView.getImage(path: casting.profile_path)
         if let name = casting.name {
             nameLabel.text = name
         } else {

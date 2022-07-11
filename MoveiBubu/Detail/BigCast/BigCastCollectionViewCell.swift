@@ -16,28 +16,13 @@ class BigCastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var birthPlaceLabel: UILabel!
     @IBOutlet weak var biographyLabel: UILabel!
    
-    private let baseImageURL = "https://api.themoviedb.org/3/person/"
+    //private let baseImageURL = "https://api.themoviedb.org/3/person/"
    
     
     func configure (bigcast: castModel) {
         
-        if let posterPath = bigcast.profile_path {
+        imageView.getImage(path: bigcast.profile_path)
             
-            if let imageURL: URL = URL(string: "\(baseImageURL)\(posterPath)") {
-                
-                imageView.kf.setImage(with: imageURL)
-                
-            } else {
-                
-                imageView.image = nil
-                
-            }
-            
-        } else {
-            
-            imageView.image = nil
-            
-        }
         if let name = bigcast.name {
             nameLabel.text = name
         } else {
