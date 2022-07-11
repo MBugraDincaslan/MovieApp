@@ -30,12 +30,24 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var overViewLabel: UILabel!
     @IBOutlet weak var runTimeLabel: UILabel!
     @IBOutlet weak var companiesStackView: UIStackView!
-    @IBOutlet weak var productionCompaniesLabel: UILabel!
+    @IBOutlet weak var productionCompaniesLabel: UILabel!{
+        didSet {
+            productionCompaniesLabel.text = "Production Companies".localize
+        }
+    }
     @IBOutlet weak var budgetStackView: UIStackView!
     @IBOutlet weak var castStackView: UIStackView!
-    @IBOutlet weak var castLabel: UILabel!
+    @IBOutlet weak var castLabel: UILabel!{
+        didSet {
+            castLabel.text = "Cast".localize
+        }
+    }
     @IBOutlet weak var recommStackView: UIStackView!
-    @IBOutlet weak var recommLabel: UILabel!
+    @IBOutlet weak var recommLabel: UILabel! {
+        didSet {
+            recommLabel.text = "Recomendation".localize
+        }
+    }
     @IBOutlet weak var recommCollectionView: UICollectionView! {
         didSet {
             recommCollectionView.dataSource = self
@@ -143,51 +155,61 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             imageView.getImage(path: movie.poster_path)
             
             if let name = movie.title {
-                nameLabel.text = "TITLE: \(String(name))".localize
+                let title = "TITLE".localize
+                nameLabel.text = "\(title): \(String(name))"
             } else {
                 nameLabel.text = nil
             }
            if let otitle = movie.original_title {
-               orginalTitleLabel.text = "ORGINAL TITLE: \(String(otitle))".localize
+               let ortitle = "ORGINAL TITLE".localize
+               orginalTitleLabel.text = "\(ortitle): \(String(otitle))"
            } else {
                orginalTitleLabel.text = nil
            }
             if let olanguage = movie.original_language {
-                orginalLanguageLabel.text = "ORIGINAL LANGUAGE: \(String(olanguage))".localize
+                let orlanguage = "Original Language".localize
+                orginalLanguageLabel.text = "\(orlanguage): \(String(olanguage))"
             } else {
                 orginalLanguageLabel.text = nil
             }
             
             if let release = movie.release_date {
-                releaseDateLabel.text = "RELEASE DATE: \(String(release))".localize
+                let releases = "Release Date".localize
+                releaseDateLabel.text = "\(releases): \(String(release))"
             } else {
                 releaseDateLabel.text = nil
             }
             if let budget = movie.budget{
-                budgetLabel.text = "BUDGET: $\(budget.formattedWithSeparator)".localize
+            
+                
+                budgetLabel.text = "BUDGET: $\(budget.formattedWithSeparator)"
             } else {
                 budgetLabel.text = nil
             }
             if let revenue = movie.revenue {
-                revenueLabel.text = "REVENUE: \(revenue.formattedWithSeparator)".localize
+                
+                revenueLabel.text = "REVENUE: \(revenue.formattedWithSeparator)"
             } else {
                 revenueLabel.text = nil
             }
            
             if let overview = movie.overview {
-                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))".localize
+                let overviews = "Overview".localize
+                overViewLabel.text = "\n\(overviews):\n \(String(overview))"
             } else {
                 overViewLabel.text = nil
             }
             if let runtime = movie.runtime {
-                runTimeLabel.text = "RUNTIME: \(String(runtime))".localize
+                let runtimes = "Runtime".localize
+                runTimeLabel.text = "\(runtimes): \(String(runtime))"
             } else {
                 runTimeLabel.text = nil
             }
             if let productioncompany = movie.production_companies {
+                let productionCompany = "Production Company".localize
                 productionCompaniesLabel.text = ""
                 for company in productioncompany {
-                    productionCompaniesLabel.text?.append(" \(company.name ?? "").\n".localize())
+                    productionCompaniesLabel.text?.append(" \(company.name ?? "").\n")
                     }
                 } else {
                 productionCompaniesLabel.text = nil
