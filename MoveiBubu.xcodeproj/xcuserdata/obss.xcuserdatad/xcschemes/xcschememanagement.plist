@@ -28,7 +28,25 @@
 		<key>MoveiBubu.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6F68057B2859FAA7002AD69C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F6805942859FAA9002AD69C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F68059E2859FAA9002AD69C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  MoveiBubu
+
+  Created by obss on 11.07.2022.
+  
+*/
+
+"List" = "List";
+"Favorites" = "Favorites";
+"Search" = "Search";
+"Revenue" = "Revenue";
+"Budget" = "Budget";
+"Overview" = "Overview";
+"Original Language" = "Original Language";
+"Runtime" = "Runtime";
+"Release Date" = "Release Date";
+"Vote Average" = "Vote Average";
+"Cast" = "Cast";
+"Recomendation" = "Recomendation";
+"Production Companies" = "Production Companies";
+"TITLE" = "TITLE";
+"ORGINAL TITLE" = "ORGINAL TITLE";
+

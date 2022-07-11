@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  MoveiBubu
+
+  Created by obss on 11.07.2022.
+  
+*/
+
+"List" = "Liste";
+"Favorites" = "Favoriler";
+"Search" = "Arama";
+"Revenue" = "Revenue";
+"Budget" = "Bütçe";
+"Overview" = "Genel Bakış";
+"Original Language" = "Orjinal Dil";
+"Runtime" = "Süre";
+"Release Date" = "Yayımlanma Tarihi";
+"Vote Average" = "Değerlendirme";
+"Cast" = "Oyuncular";
+"Recomendation" = "Önerilenler";
+"Production Companies" = "Prodüksiyon Şirketleri";
+"TITLE" = "BAŞLIK";
+"ORGINAL TITLE" = "ORJINAL BAŞLIK";
+

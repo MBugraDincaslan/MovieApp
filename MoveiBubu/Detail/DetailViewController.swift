@@ -139,7 +139,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     func configure() {
         if let movie = details {
             if let name = movie.title {
-                nameLabel.text = "TITLE: \(String(name))"
+                nameLabel.text = "TITLE: \(String(name))".localized()
             } else {
                 nameLabel.text = nil
             }
@@ -153,52 +153,52 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
                 imageView.image = nil
             }
            if let otitle = movie.original_title {
-                orginalTitleLabel.text = "ORGINAL TITLE: \(String(otitle))"
+               orginalTitleLabel.text = "ORGINAL TITLE: \(String(otitle))".localized()
            } else {
                orginalTitleLabel.text = nil
            }
             if let olanguage = movie.original_language {
-                orginalLanguageLabel.text = "ORIGINAL LANGUAGE: \(String(olanguage))"
+                orginalLanguageLabel.text = "ORIGINAL LANGUAGE: \(String(olanguage))".localized()
             } else {
                 orginalLanguageLabel.text = nil
             }
             
             if let release = movie.release_date {
-                releaseDateLabel.text = "RELEASE DATE: \(String(release))"
+                releaseDateLabel.text = "RELEASE DATE: \(String(release))".localized()
             } else {
                 releaseDateLabel.text = nil
             }
             if let budget = movie.budget{
-                budgetLabel.text = "BUDGET: \(String(budget))"
+                budgetLabel.text = "BUDGET: \(String(budget))".localized()
             } else {
                 budgetLabel.text = nil
             }
             if let revenue = movie.revenue {
-                revenueLabel.text = "REVENUE: \(String(revenue))"
+                revenueLabel.text = "REVENUE: \(String(revenue))".localized()
             } else {
                 revenueLabel.text = nil
             }
            
             if let overview = movie.overview {
-                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))"
+                overViewLabel.text = "\n OVERVIEW:\n \(String(overview))".localized()
             } else {
                 overViewLabel.text = nil
             }
             if let runtime = movie.runtime {
-                runTimeLabel.text = "RUNTIME: \(String(runtime))"
+                runTimeLabel.text = "RUNTIME: \(String(runtime))".localized()
             } else {
                 runTimeLabel.text = nil
             }
             if let productioncompany = movie.production_companies {
                 productionCompaniesLabel.text = ""
                 for company in productioncompany {
-                    productionCompaniesLabel.text?.append(" \(company.name ?? "")\n")
+                    productionCompaniesLabel.text?.append(" \(company.name ?? "").\n".localized())
                     }
                 } else {
                 productionCompaniesLabel.text = nil
             }
             if let raiting = movie.vote_average {
-                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))"
+                raitingLabel.text = "VOTE AVERAGE: \(String(raiting))".localized()
             } else {
                 raitingLabel.text = nil
             }
@@ -340,3 +340,14 @@ extension String { // string tipler,ni lokalize etmek için dahil edilmiş olan 
     }
     
 }
+/*func cleanDollars(_ value: String?) -> String {
+    guard value != nil else { return "$0.00" }
+    let doubleValue = Double(value!) ?? 0.0
+    let formatter = NumberFormatter()
+    formatter.currencyCode = "USD"
+    formatter.currencySymbol = "$"
+    formatter.minimumFractionDigits = (value!.contains(".00")) ? 0 : 2
+    formatter.maximumFractionDigits = 2
+    formatter.numberStyle = .currencyAccounting
+    return formatter.string(from: NSNumber(value: doubleValue)) ?? "$\(doubleValue)"
+}*/
