@@ -13,16 +13,16 @@ struct DataMngr {
     
     static let sharedData = DataMngr()
     //optinal
-    private var realm: Realm {
+    private var realm: Realm! {
         do {
             let realm = try Realm()
             return realm
             
         } catch {
             print("Error initalising new realm, \(error)")
-            //return
+            return nil
         }
-        return self.realm
+        
         //sonsuz döngü
         
     }

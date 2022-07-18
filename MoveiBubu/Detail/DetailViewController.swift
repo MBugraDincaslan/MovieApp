@@ -201,12 +201,13 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
             if let runtime = movie.runtime {
                 let runtimes = "Runtime".localize
+                _ = "min".localize
                 runTimeLabel.text = "\(runtimes): \(String(runtime))"
             } else {
                 runTimeLabel.text = nil
             }
             if let productioncompany = movie.production_companies {
-                let productionCompany = "Production Company".localize
+                _ = "Production Company".localize
                 productionCompaniesLabel.text = ""
                 for company in productioncompany {
                     productionCompaniesLabel.text?.append(" \(company.name ?? "").\n")
