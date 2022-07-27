@@ -9,7 +9,8 @@ import Foundation
 import RealmSwift
 
 class Task: Object {
-    
+    //persisted; dokümanda bu şekilde tanıımlamamız gerekiyor
+    //primarykey; veri tabanında verileri tutarken, kaydettiğimiz id ye göre çağırıyoruz.
     @Persisted(primaryKey: true) var id: Int = 0
     @Persisted var title: String = ""
     @Persisted var releaseDate: String = ""

@@ -10,7 +10,7 @@ import RealmSwift
 
 
 struct DataMngr {
-    
+    //singleton kullandık!
     static let sharedData = DataMngr()
     //optinal
     private var realm: Realm! {
